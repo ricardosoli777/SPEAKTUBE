@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Laajennus muuntaa YouTuben tekstityksen tekstiksi luonnollisen kuuloiseksi puheeksi käyttämällä Googlen tekoälytekniikoita."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Lisää kieli"
+   },
+   "text_cancel": {
+      "message": "Peruuttaa"
+   },
+   "text_code": {
+      "message": "Koodi"
+   },
+   "text_description": {
+      "message": "Äänitekstitys YouTubeen"
+   },
+   "text_description_small": {
+      "message": "Käännä, opi, kommunikoi!"
+   },
+   "text_disabled": {
+      "message": "Liikuntarajoitteinen"
+   },
+   "text_enable_off": {
+      "message": "Kytke pois päältä"
+   },
+   "text_enable_on": {
+      "message": "Laittaa päälle"
+   },
+   "text_enabled": {
+      "message": "Käytössä"
+   },
+   "text_max_rate": {
+      "message": "Suurin nopeus"
+   },
+   "text_name": {
+      "message": "Nimi"
+   },
+   "text_pitch": {
+      "message": "Piki"
+   },
+   "text_rate": {
+      "message": "Oletusnopeus"
+   },
+   "text_rate_desc": {
+      "message": "Äänen nopeus"
+   },
+   "text_save": {
+      "message": "Tallentaa"
+   },
+   "text_slow_down_video": {
+      "message": "Hidasta videota"
+   },
+   "text_speaking_control": {
+      "message": "Kun ääni hidastuu"
+   },
+   "text_speed_up_voice": {
+      "message": "Nopeuta ääntä"
+   },
+   "text_subtitles": {
+      "message": "Tekstitykset"
+   },
+   "text_title": {
+      "message": "Tekstityksen kaiutin"
+   },
+   "text_translate_lang": {
+      "message": "Tekstityksen kieli"
+   },
+   "text_voice": {
+      "message": "Ääni"
+   },
+   "text_volume": {
+      "message": "Äänenvoimakkuus"
+   }
+}

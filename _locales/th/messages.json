@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "ส่วนขยายแปลงคำบรรยายข้อความสำหรับ YouTube เป็นคำพูดที่เป็นธรรมชาติโดยใช้เทคโนโลยี Google และ Microsoft AI"
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "เพิ่มภาษา"
+   },
+   "text_cancel": {
+      "message": "ยกเลิก"
+   },
+   "text_code": {
+      "message": "รหัส"
+   },
+   "text_description": {
+      "message": "คำบรรยายเสียงสำหรับ YouTube"
+   },
+   "text_description_small": {
+      "message": "แปล เรียนรู้ สื่อสาร!"
+   },
+   "text_disabled": {
+      "message": "พิการ"
+   },
+   "text_enable_off": {
+      "message": "ปิดสวิตช์"
+   },
+   "text_enable_on": {
+      "message": "เปิดสวิตช์"
+   },
+   "text_enabled": {
+      "message": "เปิดใช้งาน"
+   },
+   "text_max_rate": {
+      "message": "ความเร็วสูงสุด"
+   },
+   "text_name": {
+      "message": "ชื่อ"
+   },
+   "text_pitch": {
+      "message": "ขว้าง"
+   },
+   "text_rate": {
+      "message": "ความเร็วเริ่มต้น"
+   },
+   "text_rate_desc": {
+      "message": "ความเร็วเสียง"
+   },
+   "text_save": {
+      "message": "บันทึก"
+   },
+   "text_slow_down_video": {
+      "message": "วิดีโอช้าลง"
+   },
+   "text_speaking_control": {
+      "message": "เมื่อเสียงล้าหลัง"
+   },
+   "text_speed_up_voice": {
+      "message": "เร่งเสียง"
+   },
+   "text_subtitles": {
+      "message": "คำบรรยาย"
+   },
+   "text_title": {
+      "message": "คำบรรยาย ลำโพง"
+   },
+   "text_translate_lang": {
+      "message": "คำบรรยาย ภาษา"
+   },
+   "text_voice": {
+      "message": "เสียง"
+   },
+   "text_volume": {
+      "message": "ปริมาณ"
+   }
+}

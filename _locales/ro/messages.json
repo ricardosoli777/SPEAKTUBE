@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Extensia convertește subtitrări text pentru YouTube în vorbire cu sunet natural folosind tehnologii AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Adăugați limba"
+   },
+   "text_cancel": {
+      "message": "Anulare"
+   },
+   "text_code": {
+      "message": "Cod"
+   },
+   "text_description": {
+      "message": "Subtitrări vocale pentru YouTube"
+   },
+   "text_description_small": {
+      "message": "Traduceți, învățați, comunicați!"
+   },
+   "text_disabled": {
+      "message": "Dezactivat"
+   },
+   "text_enable_off": {
+      "message": "Opriți"
+   },
+   "text_enable_on": {
+      "message": "Comută"
+   },
+   "text_enabled": {
+      "message": "Activat"
+   },
+   "text_max_rate": {
+      "message": "Viteza maxima"
+   },
+   "text_name": {
+      "message": "Nume"
+   },
+   "text_pitch": {
+      "message": "Pas"
+   },
+   "text_rate": {
+      "message": "Viteza implicită"
+   },
+   "text_rate_desc": {
+      "message": "Viteza vocii"
+   },
+   "text_save": {
+      "message": "Salvați"
+   },
+   "text_slow_down_video": {
+      "message": "Încetinește videoclipul"
+   },
+   "text_speaking_control": {
+      "message": "Când vocea este în urmă"
+   },
+   "text_speed_up_voice": {
+      "message": "Accelerează vocea"
+   },
+   "text_subtitles": {
+      "message": "Subtitrări"
+   },
+   "text_title": {
+      "message": "Subtitrare difuzor"
+   },
+   "text_translate_lang": {
+      "message": "Limba subtitrarilor"
+   },
+   "text_voice": {
+      "message": "Voce"
+   },
+   "text_volume": {
+      "message": "Volum"
+   }
+}

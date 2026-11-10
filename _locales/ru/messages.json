@@ -1,0 +1,80 @@
+{
+   "extension_description": {
+      "message": "Расширение преобразует текстовые субтитры для YouTube в естественно звучащую речь, используя технологии искусственного интеллекта"
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Добавить язык"
+   },
+   "text_cancel": {
+      "message": "Отмена"
+   },
+   "text_code": {
+      "message": "Код"
+   },
+   "text_description": {
+      "message": "Озвучивание субтитров для YouTube"
+   },
+   "text_description_small": {
+      "message": "Переводите, учите, общайтесь!"
+   },
+   "text_disabled": {
+      "message": "Выключено"
+   },
+   "text_enable_off": {
+      "message": "Выключить"
+   },
+   "text_enable_on": {
+      "message": "Включить"
+   },
+   "text_enabled": {
+      "message": "Включено"
+   },
+   "text_max_rate": {
+      "message": "Максимальная скорость"
+   },
+   "text_name": {
+      "message": "Имя"
+   },
+   "text_pitch": {
+      "message": "Высота тона"
+   },
+   "text_rate": {
+      "message": "Скорость"
+   },
+   "text_rate_desc": {
+      "message": "Скорость голоса"
+   },
+   "text_save": {
+      "message": "Сохранить"
+   },
+   "text_slow_down_video": {
+      "message": "Замедлять видео"
+   },
+   "text_speaking_control": {
+      "message": "При отставании голоса"
+   },
+   "text_speed_up_voice": {
+      "message": "Ускорять голос"
+   },
+   "text_subtitles": {
+      "message": "Субтитры"
+   },
+   "text_title": {
+      "message": "Плеер субтитров"
+   },
+   "text_translate_lang": {
+      "message": "Язык Субтитров"
+   },
+   "text_ui_lang": {
+      "message": "Язык UI"
+   },
+   "text_voice": {
+      "message": "Голос"
+   },
+   "text_volume": {
+      "message": "Громкость"
+   }
+}

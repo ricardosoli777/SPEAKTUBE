@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Udvidelse konverterer teksttekster til YouTube til naturligt lydende tale ved hjælp af Google og Microsoft AI-teknologier."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Tilføj sprog"
+   },
+   "text_cancel": {
+      "message": "Afbestille"
+   },
+   "text_code": {
+      "message": "Kode"
+   },
+   "text_description": {
+      "message": "Stemme undertekster til YouTube"
+   },
+   "text_description_small": {
+      "message": "Oversæt, lær, kommuniker!"
+   },
+   "text_disabled": {
+      "message": "handicappet"
+   },
+   "text_enable_off": {
+      "message": "Slukke"
+   },
+   "text_enable_on": {
+      "message": "Tænde"
+   },
+   "text_enabled": {
+      "message": "Aktiveret"
+   },
+   "text_max_rate": {
+      "message": "Maksimal hastighed"
+   },
+   "text_name": {
+      "message": "Navn"
+   },
+   "text_pitch": {
+      "message": "Tonehøjde"
+   },
+   "text_rate": {
+      "message": "Standard hastighed"
+   },
+   "text_rate_desc": {
+      "message": "Stemmehastighed"
+   },
+   "text_save": {
+      "message": "Gemme"
+   },
+   "text_slow_down_video": {
+      "message": "Sænk videoen ned"
+   },
+   "text_speaking_control": {
+      "message": "Når stemmen halter"
+   },
+   "text_speed_up_voice": {
+      "message": "Fremskynde stemmen"
+   },
+   "text_subtitles": {
+      "message": "Undertekster"
+   },
+   "text_title": {
+      "message": "Undertekst højttaler"
+   },
+   "text_translate_lang": {
+      "message": "Undertekstsprog"
+   },
+   "text_voice": {
+      "message": "Stemme"
+   },
+   "text_volume": {
+      "message": "Bind"
+   }
+}

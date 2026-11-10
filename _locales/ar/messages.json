@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "يقوم الامتداد بتحويل ترجمات النص على YouTube إلى كلام طبيعي باستخدام تقنيات Google و Microsoft AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "إضافة لغة"
+   },
+   "text_cancel": {
+      "message": "يلغي"
+   },
+   "text_code": {
+      "message": "الشفرة"
+   },
+   "text_description": {
+      "message": "الترجمة الصوتية ليوتيوب"
+   },
+   "text_description_small": {
+      "message": "ترجم ، تعلم ، تواصل!"
+   },
+   "text_disabled": {
+      "message": "معاق"
+   },
+   "text_enable_off": {
+      "message": "اطفيء"
+   },
+   "text_enable_on": {
+      "message": "شغل"
+   },
+   "text_enabled": {
+      "message": "ممكن"
+   },
+   "text_max_rate": {
+      "message": "السرعة القصوى"
+   },
+   "text_name": {
+      "message": "اسم"
+   },
+   "text_pitch": {
+      "message": "ملعب كورة قدم"
+   },
+   "text_rate": {
+      "message": "السرعة الافتراضية"
+   },
+   "text_rate_desc": {
+      "message": "سرعة الصوت"
+   },
+   "text_save": {
+      "message": "يحفظ"
+   },
+   "text_slow_down_video": {
+      "message": "إبطاء الفيديو"
+   },
+   "text_speaking_control": {
+      "message": "عندما يتأخر الصوت"
+   },
+   "text_speed_up_voice": {
+      "message": "تسريع الصوت"
+   },
+   "text_subtitles": {
+      "message": "ترجمات"
+   },
+   "text_title": {
+      "message": "ترجمة المتحدث"
+   },
+   "text_translate_lang": {
+      "message": "لغة الترجمة"
+   },
+   "text_voice": {
+      "message": "صوت"
+   },
+   "text_volume": {
+      "message": "الصوت"
+   }
+}

@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Екстензија претвара текстуалне титлове за ИоуТубе у говор који звучи природно користећи технологије Гоогле и Мицрософт АИ."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Додај језик"
+   },
+   "text_cancel": {
+      "message": "Поништити, отказати"
+   },
+   "text_code": {
+      "message": "Код"
+   },
+   "text_description": {
+      "message": "Гласовни титлови за ИоуТубе"
+   },
+   "text_description_small": {
+      "message": "Преводите, учите, комуницирајте!"
+   },
+   "text_disabled": {
+      "message": "Онемогућено"
+   },
+   "text_enable_off": {
+      "message": "Искључити"
+   },
+   "text_enable_on": {
+      "message": "Укључити"
+   },
+   "text_enabled": {
+      "message": "Омогућено"
+   },
+   "text_max_rate": {
+      "message": "Максимална брзина"
+   },
+   "text_name": {
+      "message": "Име"
+   },
+   "text_pitch": {
+      "message": "Висина тона"
+   },
+   "text_rate": {
+      "message": "Подразумевана брзина"
+   },
+   "text_rate_desc": {
+      "message": "Брзина гласа"
+   },
+   "text_save": {
+      "message": "сачувати"
+   },
+   "text_slow_down_video": {
+      "message": "Успорите видео"
+   },
+   "text_speaking_control": {
+      "message": "Кад глас заостаје"
+   },
+   "text_speed_up_voice": {
+      "message": "Убрзајте глас"
+   },
+   "text_subtitles": {
+      "message": "Субтитлес"
+   },
+   "text_title": {
+      "message": "Титлови Спеакер"
+   },
+   "text_translate_lang": {
+      "message": "Језик титлова"
+   },
+   "text_voice": {
+      "message": "Глас"
+   },
+   "text_volume": {
+      "message": "Волуме"
+   }
+}

@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Kiendelezi hubadilisha manukuu ya YouTube kuwa hotuba ya sauti ya asili kwa kutumia teknolojia za AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Ongeza Lugha"
+   },
+   "text_cancel": {
+      "message": "Ghairi"
+   },
+   "text_code": {
+      "message": "Kanuni"
+   },
+   "text_description": {
+      "message": "Manukuu ya sauti kwa YouTube"
+   },
+   "text_description_small": {
+      "message": "Tafsiri, jifunze, wasiliana!"
+   },
+   "text_disabled": {
+      "message": "Imezimwa"
+   },
+   "text_enable_off": {
+      "message": "Zima"
+   },
+   "text_enable_on": {
+      "message": "Washa"
+   },
+   "text_enabled": {
+      "message": "Imewashwa"
+   },
+   "text_max_rate": {
+      "message": "Kasi ya juu zaidi"
+   },
+   "text_name": {
+      "message": "Jina"
+   },
+   "text_pitch": {
+      "message": "Lami"
+   },
+   "text_rate": {
+      "message": "Kasi chaguomsingi"
+   },
+   "text_rate_desc": {
+      "message": "Kasi ya sauti"
+   },
+   "text_save": {
+      "message": "Hifadhi"
+   },
+   "text_slow_down_video": {
+      "message": "Punguza video"
+   },
+   "text_speaking_control": {
+      "message": "Wakati sauti inapungua"
+   },
+   "text_speed_up_voice": {
+      "message": "Kuongeza kasi ya sauti"
+   },
+   "text_subtitles": {
+      "message": "Manukuu"
+   },
+   "text_title": {
+      "message": "Manukuu Spika"
+   },
+   "text_translate_lang": {
+      "message": "Lugha ya Manukuu"
+   },
+   "text_voice": {
+      "message": "Sauti"
+   },
+   "text_volume": {
+      "message": "Kiasi"
+   }
+}

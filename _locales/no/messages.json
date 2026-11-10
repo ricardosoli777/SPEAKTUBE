@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Utvidelse konverterer teksting for YouTube til tale med naturlig lyd ved å bruke drevet av Google og Microsoft AI-teknologier."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Legg til språk"
+   },
+   "text_cancel": {
+      "message": "Avbryt"
+   },
+   "text_code": {
+      "message": "Kode"
+   },
+   "text_description": {
+      "message": "Stemmeteksting for YouTube"
+   },
+   "text_description_small": {
+      "message": "Oversett, lær, kommuniser!"
+   },
+   "text_disabled": {
+      "message": "Funksjonshemmet"
+   },
+   "text_enable_off": {
+      "message": "Slå av"
+   },
+   "text_enable_on": {
+      "message": "Skru på"
+   },
+   "text_enabled": {
+      "message": "Aktivert"
+   },
+   "text_max_rate": {
+      "message": "Topphastighet"
+   },
+   "text_name": {
+      "message": "Navn"
+   },
+   "text_pitch": {
+      "message": "Tonehøyde"
+   },
+   "text_rate": {
+      "message": "Standard hastighet"
+   },
+   "text_rate_desc": {
+      "message": "Stemmehastighet"
+   },
+   "text_save": {
+      "message": "Lagre"
+   },
+   "text_slow_down_video": {
+      "message": "Senk videoen"
+   },
+   "text_speaking_control": {
+      "message": "Når stemmen henger"
+   },
+   "text_speed_up_voice": {
+      "message": "Få fart på stemmen"
+   },
+   "text_subtitles": {
+      "message": "Undertekster"
+   },
+   "text_title": {
+      "message": "Teksting høyttaler"
+   },
+   "text_translate_lang": {
+      "message": "Språk for undertekster"
+   },
+   "text_voice": {
+      "message": "Stemme"
+   },
+   "text_volume": {
+      "message": "Volum"
+   }
+}

@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Rozszerzenie konwertuje napisy tekstowe dla YouTube na naturalnie brzmiącą mowę za pomocą technologii Google i Microsoft AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Dodaj język"
+   },
+   "text_cancel": {
+      "message": "Anulować"
+   },
+   "text_code": {
+      "message": "Kod"
+   },
+   "text_description": {
+      "message": "Napisy głosowe na YouTube"
+   },
+   "text_description_small": {
+      "message": "Tłumacz, ucz się, komunikuj!"
+   },
+   "text_disabled": {
+      "message": "Wyłączone"
+   },
+   "text_enable_off": {
+      "message": "Wyłączyć"
+   },
+   "text_enable_on": {
+      "message": "Włączać"
+   },
+   "text_enabled": {
+      "message": "Włączony"
+   },
+   "text_max_rate": {
+      "message": "Maksymalna prędkość"
+   },
+   "text_name": {
+      "message": "Nazwa"
+   },
+   "text_pitch": {
+      "message": "Poziom"
+   },
+   "text_rate": {
+      "message": "Domyślna prędkość"
+   },
+   "text_rate_desc": {
+      "message": "Szybkość głosu"
+   },
+   "text_save": {
+      "message": "Zapisać"
+   },
+   "text_slow_down_video": {
+      "message": "Zwolnij wideo"
+   },
+   "text_speaking_control": {
+      "message": "Kiedy głos jest opóźniony"
+   },
+   "text_speed_up_voice": {
+      "message": "Przyspiesz głos"
+   },
+   "text_subtitles": {
+      "message": "Napisy na filmie obcojęzycznym"
+   },
+   "text_title": {
+      "message": "Głośnik napisów"
+   },
+   "text_translate_lang": {
+      "message": "Język napisów"
+   },
+   "text_voice": {
+      "message": "Głos"
+   },
+   "text_volume": {
+      "message": "Tom"
+   }
+}

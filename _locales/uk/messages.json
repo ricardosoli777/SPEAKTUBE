@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Розширення перетворює текстові субтитри для YouTube у мовлення природного звучання за допомогою технологій Google і Microsoft AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Додати мову"
+   },
+   "text_cancel": {
+      "message": "Скасувати"
+   },
+   "text_code": {
+      "message": "код"
+   },
+   "text_description": {
+      "message": "Голосові субтитри для YouTube"
+   },
+   "text_description_small": {
+      "message": "Перекладайте, навчайтеся, спілкуйтеся!"
+   },
+   "text_disabled": {
+      "message": "Вимкнено"
+   },
+   "text_enable_off": {
+      "message": "Вимкнути"
+   },
+   "text_enable_on": {
+      "message": "Ввімкнути"
+   },
+   "text_enabled": {
+      "message": "Увімкнено"
+   },
+   "text_max_rate": {
+      "message": "Максимальна швидкість"
+   },
+   "text_name": {
+      "message": "Ім'я"
+   },
+   "text_pitch": {
+      "message": "Висота"
+   },
+   "text_rate": {
+      "message": "Швидкість за замовчуванням"
+   },
+   "text_rate_desc": {
+      "message": "Швидкість голосу"
+   },
+   "text_save": {
+      "message": "Зберегти"
+   },
+   "text_slow_down_video": {
+      "message": "Уповільніть відео"
+   },
+   "text_speaking_control": {
+      "message": "Коли голос відстає"
+   },
+   "text_speed_up_voice": {
+      "message": "Прискорюйте голос"
+   },
+   "text_subtitles": {
+      "message": "Субтитри"
+   },
+   "text_title": {
+      "message": "Динамік субтитрів"
+   },
+   "text_translate_lang": {
+      "message": "Мова субтитрів"
+   },
+   "text_voice": {
+      "message": "Голос"
+   },
+   "text_volume": {
+      "message": "Обсяг"
+   }
+}

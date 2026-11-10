@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "확장 프로그램은 Google 및 Microsoft AI 기술을 사용하여 YouTube용 텍스트 자막을 자연스러운 음성으로 변환합니다."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "언어 추가"
+   },
+   "text_cancel": {
+      "message": "취소"
+   },
+   "text_code": {
+      "message": "암호"
+   },
+   "text_description": {
+      "message": "YouTube용 음성 자막"
+   },
+   "text_description_small": {
+      "message": "번역하고, 배우고, 소통하세요!"
+   },
+   "text_disabled": {
+      "message": "장애가있는"
+   },
+   "text_enable_off": {
+      "message": "끄다"
+   },
+   "text_enable_on": {
+      "message": "스위치 켜기"
+   },
+   "text_enabled": {
+      "message": "활성화됨"
+   },
+   "text_max_rate": {
+      "message": "최대 속도"
+   },
+   "text_name": {
+      "message": "이름"
+   },
+   "text_pitch": {
+      "message": "정점"
+   },
+   "text_rate": {
+      "message": "기본 속도"
+   },
+   "text_rate_desc": {
+      "message": "음성 속도"
+   },
+   "text_save": {
+      "message": "구하다"
+   },
+   "text_slow_down_video": {
+      "message": "동영상을 느리게"
+   },
+   "text_speaking_control": {
+      "message": "목소리가 느릴 때"
+   },
+   "text_speed_up_voice": {
+      "message": "목소리를 빠르게"
+   },
+   "text_subtitles": {
+      "message": "자막"
+   },
+   "text_title": {
+      "message": "자막 스피커"
+   },
+   "text_translate_lang": {
+      "message": "자막 언어"
+   },
+   "text_voice": {
+      "message": "목소리"
+   },
+   "text_volume": {
+      "message": "용량"
+   }
+}

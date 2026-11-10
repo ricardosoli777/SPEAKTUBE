@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Ekstenzija pretvara tekstualne titlove za YouTube u govor koji zvuči prirodno koristeći tehnologije Google i Microsoft AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Dodaj jezik"
+   },
+   "text_cancel": {
+      "message": "Otkaži"
+   },
+   "text_code": {
+      "message": "Kod"
+   },
+   "text_description": {
+      "message": "Glasovni titlovi za YouTube"
+   },
+   "text_description_small": {
+      "message": "Prevodite, učite, komunicirajte!"
+   },
+   "text_disabled": {
+      "message": "Onemogućeno"
+   },
+   "text_enable_off": {
+      "message": "Ugasiti"
+   },
+   "text_enable_on": {
+      "message": "Upali"
+   },
+   "text_enabled": {
+      "message": "Omogućeno"
+   },
+   "text_max_rate": {
+      "message": "Maksimalna brzina"
+   },
+   "text_name": {
+      "message": "Ime"
+   },
+   "text_pitch": {
+      "message": "Pitch"
+   },
+   "text_rate": {
+      "message": "Zadana brzina"
+   },
+   "text_rate_desc": {
+      "message": "Brzina glasa"
+   },
+   "text_save": {
+      "message": "Sačuvaj"
+   },
+   "text_slow_down_video": {
+      "message": "Usporite video"
+   },
+   "text_speaking_control": {
+      "message": "Kada glas zaostaje"
+   },
+   "text_speed_up_voice": {
+      "message": "Ubrzajte glas"
+   },
+   "text_subtitles": {
+      "message": "Titlovi"
+   },
+   "text_title": {
+      "message": "Titlovi Speaker"
+   },
+   "text_translate_lang": {
+      "message": "Titlovi Jezik"
+   },
+   "text_voice": {
+      "message": "Glas"
+   },
+   "text_volume": {
+      "message": "Volume"
+   }
+}

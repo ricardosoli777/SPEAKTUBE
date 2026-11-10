@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Tillägg konverterar textundertexter för YouTube till naturligt klingande tal med hjälp av Googles och Microsofts AI-teknik."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Lägg till språk"
+   },
+   "text_cancel": {
+      "message": "Avbryt"
+   },
+   "text_code": {
+      "message": "Koda"
+   },
+   "text_description": {
+      "message": "Röstundertexter för YouTube"
+   },
+   "text_description_small": {
+      "message": "Översätt, lär dig, kommunicera!"
+   },
+   "text_disabled": {
+      "message": "Inaktiverad"
+   },
+   "text_enable_off": {
+      "message": "Stäng av"
+   },
+   "text_enable_on": {
+      "message": "Slå på"
+   },
+   "text_enabled": {
+      "message": "Aktiverad"
+   },
+   "text_max_rate": {
+      "message": "Maxhastighet"
+   },
+   "text_name": {
+      "message": "namn"
+   },
+   "text_pitch": {
+      "message": "Tonhöjd"
+   },
+   "text_rate": {
+      "message": "Standardhastighet"
+   },
+   "text_rate_desc": {
+      "message": "Rösthastighet"
+   },
+   "text_save": {
+      "message": "Spara"
+   },
+   "text_slow_down_video": {
+      "message": "Sakta ner videon"
+   },
+   "text_speaking_control": {
+      "message": "När rösten släpar efter"
+   },
+   "text_speed_up_voice": {
+      "message": "Få fart på rösten"
+   },
+   "text_subtitles": {
+      "message": "undertexter"
+   },
+   "text_title": {
+      "message": "Undertexter högtalare"
+   },
+   "text_translate_lang": {
+      "message": "Språk för undertexter"
+   },
+   "text_voice": {
+      "message": "Röst"
+   },
+   "text_volume": {
+      "message": "Volym"
+   }
+}

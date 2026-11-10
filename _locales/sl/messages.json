@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Razširitev pretvori besedilne podnapise za YouTube v naravno zveneči govor z uporabo tehnologij Google in Microsoft AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Dodaj jezik"
+   },
+   "text_cancel": {
+      "message": "Prekliči"
+   },
+   "text_code": {
+      "message": "Koda"
+   },
+   "text_description": {
+      "message": "Glasovni podnapisi za YouTube"
+   },
+   "text_description_small": {
+      "message": "Prevajajte, učite se, komunicirajte!"
+   },
+   "text_disabled": {
+      "message": "Onemogočeno"
+   },
+   "text_enable_off": {
+      "message": "Ugasniti"
+   },
+   "text_enable_on": {
+      "message": "Prižgi"
+   },
+   "text_enabled": {
+      "message": "Omogočeno"
+   },
+   "text_max_rate": {
+      "message": "Največja hitrost"
+   },
+   "text_name": {
+      "message": "ime"
+   },
+   "text_pitch": {
+      "message": "Višina tona"
+   },
+   "text_rate": {
+      "message": "Privzeta hitrost"
+   },
+   "text_rate_desc": {
+      "message": "Hitrost glasu"
+   },
+   "text_save": {
+      "message": "Shrani"
+   },
+   "text_slow_down_video": {
+      "message": "Upočasni video"
+   },
+   "text_speaking_control": {
+      "message": "Ko glas zaostaja"
+   },
+   "text_speed_up_voice": {
+      "message": "Pospeši glas"
+   },
+   "text_subtitles": {
+      "message": "Podnapisi"
+   },
+   "text_title": {
+      "message": "Podnapisi Zvočnik"
+   },
+   "text_translate_lang": {
+      "message": "Jezik podnapisov"
+   },
+   "text_voice": {
+      "message": "Glas"
+   },
+   "text_volume": {
+      "message": "Glasnost"
+   }
+}

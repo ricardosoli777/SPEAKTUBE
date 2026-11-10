@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Ekstensi mengubah subtitle teks untuk YouTube menjadi ucapan yang terdengar alami menggunakan teknologi AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Tambahkan Bahasa"
+   },
+   "text_cancel": {
+      "message": "Membatalkan"
+   },
+   "text_code": {
+      "message": "Kode"
+   },
+   "text_description": {
+      "message": "Subtitel suara untuk YouTube"
+   },
+   "text_description_small": {
+      "message": "Terjemahkan, pelajari, komunikasikan!"
+   },
+   "text_disabled": {
+      "message": "Dengan disabilitas"
+   },
+   "text_enable_off": {
+      "message": "Mematikan"
+   },
+   "text_enable_on": {
+      "message": "Menyalakan"
+   },
+   "text_enabled": {
+      "message": "Diaktifkan"
+   },
+   "text_max_rate": {
+      "message": "Kecepatan maksimum"
+   },
+   "text_name": {
+      "message": "Nama"
+   },
+   "text_pitch": {
+      "message": "Melempar"
+   },
+   "text_rate": {
+      "message": "Kecepatan default"
+   },
+   "text_rate_desc": {
+      "message": "Kecepatan suara"
+   },
+   "text_save": {
+      "message": "Menyimpan"
+   },
+   "text_slow_down_video": {
+      "message": "Perlambat video"
+   },
+   "text_speaking_control": {
+      "message": "Saat suara lag"
+   },
+   "text_speed_up_voice": {
+      "message": "Mempercepat suara"
+   },
+   "text_subtitles": {
+      "message": "Subtitle"
+   },
+   "text_title": {
+      "message": "Subtitel Pembicara"
+   },
+   "text_translate_lang": {
+      "message": "Bahasa Subtitel"
+   },
+   "text_voice": {
+      "message": "Suara"
+   },
+   "text_volume": {
+      "message": "Volume"
+   }
+}

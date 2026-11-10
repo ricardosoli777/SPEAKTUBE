@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Extensie zet tekstondertitels voor YouTube om in natuurlijk klinkende spraak met behulp van AI-technologieën."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Taal toevoegen"
+   },
+   "text_cancel": {
+      "message": "Annuleren"
+   },
+   "text_code": {
+      "message": "Code"
+   },
+   "text_description": {
+      "message": "Gesproken ondertiteling voor YouTube"
+   },
+   "text_description_small": {
+      "message": "Vertalen, leren, communiceren!"
+   },
+   "text_disabled": {
+      "message": "Gehandicapt"
+   },
+   "text_enable_off": {
+      "message": "Uitzetten"
+   },
+   "text_enable_on": {
+      "message": "Inschakelen"
+   },
+   "text_enabled": {
+      "message": "Ingeschakeld"
+   },
+   "text_max_rate": {
+      "message": "Maximum snelheid"
+   },
+   "text_name": {
+      "message": "Naam"
+   },
+   "text_pitch": {
+      "message": "Toonhoogte"
+   },
+   "text_rate": {
+      "message": "Standaard snelheid"
+   },
+   "text_rate_desc": {
+      "message": "Spraaksnelheid"
+   },
+   "text_save": {
+      "message": "Opslaan"
+   },
+   "text_slow_down_video": {
+      "message": "Vertraag video"
+   },
+   "text_speaking_control": {
+      "message": "Wanneer de stem achterblijft"
+   },
+   "text_speed_up_voice": {
+      "message": "Versnel de stem"
+   },
+   "text_subtitles": {
+      "message": "Ondertitels"
+   },
+   "text_title": {
+      "message": "Ondertitels Spreker"
+   },
+   "text_translate_lang": {
+      "message": "Ondertiteling Taal"
+   },
+   "text_voice": {
+      "message": "Stem"
+   },
+   "text_volume": {
+      "message": "Volume"
+   }
+}

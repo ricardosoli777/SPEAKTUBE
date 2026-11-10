@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "拡張機能は、GoogleとMicrosoft AIテクノロジーを利用して、YouTubeのテキスト字幕を自然な音声に変換します。"
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "言語を追加する"
+   },
+   "text_cancel": {
+      "message": "キャンセル"
+   },
+   "text_code": {
+      "message": "コード"
+   },
+   "text_description": {
+      "message": "YouTubeの音声字幕"
+   },
+   "text_description_small": {
+      "message": "翻訳、学習、コミュニケーション！"
+   },
+   "text_disabled": {
+      "message": "無効"
+   },
+   "text_enable_off": {
+      "message": "スイッチをオフにします"
+   },
+   "text_enable_on": {
+      "message": "スイッチをつける"
+   },
+   "text_enabled": {
+      "message": "有効"
+   },
+   "text_max_rate": {
+      "message": "最大速度"
+   },
+   "text_name": {
+      "message": "名前"
+   },
+   "text_pitch": {
+      "message": "ピッチ"
+   },
+   "text_rate": {
+      "message": "デフォルトの速度"
+   },
+   "text_rate_desc": {
+      "message": "音声速度"
+   },
+   "text_save": {
+      "message": "保存する"
+   },
+   "text_slow_down_video": {
+      "message": "ビデオを遅くする"
+   },
+   "text_speaking_control": {
+      "message": "声が遅れているとき"
+   },
+   "text_speed_up_voice": {
+      "message": "声をスピードアップ"
+   },
+   "text_subtitles": {
+      "message": "字幕"
+   },
+   "text_title": {
+      "message": "字幕スピーカー"
+   },
+   "text_translate_lang": {
+      "message": "字幕言語"
+   },
+   "text_voice": {
+      "message": "ボイス"
+   },
+   "text_volume": {
+      "message": "音量"
+   }
+}

@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Разширението преобразува текстови субтитри за YouTube в естествено звучаща реч, използвана от технологиите на Google AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Добавяне на език"
+   },
+   "text_cancel": {
+      "message": "Отмяна"
+   },
+   "text_code": {
+      "message": "код"
+   },
+   "text_description": {
+      "message": "Гласови субтитри за YouTube"
+   },
+   "text_description_small": {
+      "message": "Превеждайте, учете, общувайте!"
+   },
+   "text_disabled": {
+      "message": "хора с увреждания"
+   },
+   "text_enable_off": {
+      "message": "Изключвам"
+   },
+   "text_enable_on": {
+      "message": "Включи"
+   },
+   "text_enabled": {
+      "message": "Разрешено"
+   },
+   "text_max_rate": {
+      "message": "Максимална скорост"
+   },
+   "text_name": {
+      "message": "име"
+   },
+   "text_pitch": {
+      "message": "Наклон"
+   },
+   "text_rate": {
+      "message": "Скорост по подразбиране"
+   },
+   "text_rate_desc": {
+      "message": "Скорост на гласа"
+   },
+   "text_save": {
+      "message": "Запазете"
+   },
+   "text_slow_down_video": {
+      "message": "Забавете видеото"
+   },
+   "text_speaking_control": {
+      "message": "Когато гласът е изостанал"
+   },
+   "text_speed_up_voice": {
+      "message": "Ускорете гласа"
+   },
+   "text_subtitles": {
+      "message": "Субтитри"
+   },
+   "text_title": {
+      "message": "Субтитри Високоговорител"
+   },
+   "text_translate_lang": {
+      "message": "Език на субтитрите"
+   },
+   "text_voice": {
+      "message": "Глас"
+   },
+   "text_volume": {
+      "message": "Сила на звука"
+   }
+}

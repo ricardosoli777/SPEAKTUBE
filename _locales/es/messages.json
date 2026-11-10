@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "La extensión convierte subtítulos de texto para YouTube en un discurso que suena natural."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Agregar idioma"
+   },
+   "text_cancel": {
+      "message": "Cancelar"
+   },
+   "text_code": {
+      "message": "Código"
+   },
+   "text_description": {
+      "message": "Subtítulos de voz para YouTube"
+   },
+   "text_description_small": {
+      "message": "¡Traduce, aprende, comunica!"
+   },
+   "text_disabled": {
+      "message": "Desactivado"
+   },
+   "text_enable_off": {
+      "message": "Apagar"
+   },
+   "text_enable_on": {
+      "message": "Encender"
+   },
+   "text_enabled": {
+      "message": "Activado"
+   },
+   "text_max_rate": {
+      "message": "Velocidad máxima"
+   },
+   "text_name": {
+      "message": "Nombre"
+   },
+   "text_pitch": {
+      "message": "Terreno de juego"
+   },
+   "text_rate": {
+      "message": "Velocidad predeterminada"
+   },
+   "text_rate_desc": {
+      "message": "Velocidad de voz"
+   },
+   "text_save": {
+      "message": "Ahorrar"
+   },
+   "text_slow_down_video": {
+      "message": "Ralentizar el video"
+   },
+   "text_speaking_control": {
+      "message": "Cuando la voz se está quedando atrás"
+   },
+   "text_speed_up_voice": {
+      "message": "Acelera la voz"
+   },
+   "text_subtitles": {
+      "message": "Subtítulos"
+   },
+   "text_title": {
+      "message": "Altavoz de subtítulos"
+   },
+   "text_translate_lang": {
+      "message": "Idioma de los subtítulos"
+   },
+   "text_voice": {
+      "message": "Voz"
+   },
+   "text_volume": {
+      "message": "Volumen"
+   }
+}

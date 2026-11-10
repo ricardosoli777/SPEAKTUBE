@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Η επέκταση μετατρέπει υπότιτλους κειμένου για το YouTube σε ομιλία με φυσικό ήχο χρησιμοποιώντας τεχνολογίες τεχνητής νοημοσύνης."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Προσθήκη γλώσσας"
+   },
+   "text_cancel": {
+      "message": "Ματαίωση"
+   },
+   "text_code": {
+      "message": "Κώδικας"
+   },
+   "text_description": {
+      "message": "Υπότιτλοι φωνής για το YouTube"
+   },
+   "text_description_small": {
+      "message": "Μεταφράστε, μάθετε, επικοινωνήστε!"
+   },
+   "text_disabled": {
+      "message": "άτομα με ειδικές ανάγκες"
+   },
+   "text_enable_off": {
+      "message": "Σβήνω"
+   },
+   "text_enable_on": {
+      "message": "Αναψε"
+   },
+   "text_enabled": {
+      "message": "Ενεργοποιημένο"
+   },
+   "text_max_rate": {
+      "message": "Μέγιστη ταχύτητα"
+   },
+   "text_name": {
+      "message": "Ονομα"
+   },
+   "text_pitch": {
+      "message": "Πίσσα"
+   },
+   "text_rate": {
+      "message": "Προεπιλεγμένη ταχύτητα"
+   },
+   "text_rate_desc": {
+      "message": "Ταχύτητα φωνής"
+   },
+   "text_save": {
+      "message": "Αποθηκεύσετε"
+   },
+   "text_slow_down_video": {
+      "message": "Σιγά το βίντεο"
+   },
+   "text_speaking_control": {
+      "message": "Όταν η φωνή καθυστερεί"
+   },
+   "text_speed_up_voice": {
+      "message": "Επιταχύνετε τη φωνή"
+   },
+   "text_subtitles": {
+      "message": "Υπότιτλοι"
+   },
+   "text_title": {
+      "message": "Υπότιτλοι Speaker"
+   },
+   "text_translate_lang": {
+      "message": "Γλώσσα υπότιτλων"
+   },
+   "text_voice": {
+      "message": "Φωνή"
+   },
+   "text_volume": {
+      "message": "Ενταση ΗΧΟΥ"
+   }
+}

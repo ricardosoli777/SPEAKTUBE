@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "এক্সটেনশান গুগল এআই প্রযুক্তি দ্বারা চালিত ব্যবহার করে ইউটিউবের জন্য পাঠ্য সাবটাইটেলগুলিকে প্রাকৃতিক শব্দে রূপান্তরিত করে।"
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "ভাষা যোগ করুন"
+   },
+   "text_cancel": {
+      "message": "বাতিল করুন"
+   },
+   "text_code": {
+      "message": "কোড"
+   },
+   "text_description": {
+      "message": "YouTube এর জন্য ভয়েস সাবটাইটেল"
+   },
+   "text_description_small": {
+      "message": "অনুবাদ করুন, শিখুন, যোগাযোগ করুন!"
+   },
+   "text_disabled": {
+      "message": "অক্ষম"
+   },
+   "text_enable_off": {
+      "message": "বন্ধ"
+   },
+   "text_enable_on": {
+      "message": "চালু করা"
+   },
+   "text_enabled": {
+      "message": "সক্রিয়"
+   },
+   "text_max_rate": {
+      "message": "সর্বোচ্চ গতি"
+   },
+   "text_name": {
+      "message": "নাম"
+   },
+   "text_pitch": {
+      "message": "পিচ"
+   },
+   "text_rate": {
+      "message": "ডিফল্ট গতি"
+   },
+   "text_rate_desc": {
+      "message": "ভয়েসের গতি"
+   },
+   "text_save": {
+      "message": "সংরক্ষণ"
+   },
+   "text_slow_down_video": {
+      "message": "ভিডিও স্লো ডাউন করুন"
+   },
+   "text_speaking_control": {
+      "message": "কণ্ঠস্বর যখন পিছিয়ে থাকে"
+   },
+   "text_speed_up_voice": {
+      "message": "কন্ঠের গতি বাড়ান"
+   },
+   "text_subtitles": {
+      "message": "সাবটাইটেল"
+   },
+   "text_title": {
+      "message": "সাবটাইটেল স্পিকার"
+   },
+   "text_translate_lang": {
+      "message": "সাবটাইটেল ভাষা"
+   },
+   "text_voice": {
+      "message": "ভয়েস"
+   },
+   "text_volume": {
+      "message": "আয়তন"
+   }
+}

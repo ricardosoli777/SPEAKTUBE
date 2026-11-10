@@ -1,0 +1,13 @@
+.build-installer/
+__pycache__/
+*.py[cod]
+*.before-*
+backups/
+artifacts/
+Speak Subtitulo YouTube/
+installer/SpeakTubeVoiceSetup.exe
+*.pem
+*.pfx
+*.p12
+.env
+.env.*

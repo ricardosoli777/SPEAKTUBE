@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "A extensão converte legendas de texto para o YouTube em voz de som natural usando tecnologias do Google e da Microsoft AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Adicionar idioma"
+   },
+   "text_cancel": {
+      "message": "Cancelar"
+   },
+   "text_code": {
+      "message": "Código"
+   },
+   "text_description": {
+      "message": "Legendas de voz para o YouTube"
+   },
+   "text_description_small": {
+      "message": "Traduza, aprenda, comunique-se!"
+   },
+   "text_disabled": {
+      "message": "Desabilitado"
+   },
+   "text_enable_off": {
+      "message": "Desligar"
+   },
+   "text_enable_on": {
+      "message": "Ligar"
+   },
+   "text_enabled": {
+      "message": "Habilitado"
+   },
+   "text_max_rate": {
+      "message": "Velocidade máxima"
+   },
+   "text_name": {
+      "message": "Nome"
+   },
+   "text_pitch": {
+      "message": "Tom"
+   },
+   "text_rate": {
+      "message": "Velocidade padrão"
+   },
+   "text_rate_desc": {
+      "message": "Velocidade de voz"
+   },
+   "text_save": {
+      "message": "Salve"
+   },
+   "text_slow_down_video": {
+      "message": "Desacelere o vídeo"
+   },
+   "text_speaking_control": {
+      "message": "Quando a voz está falhando"
+   },
+   "text_speed_up_voice": {
+      "message": "Acelere a voz"
+   },
+   "text_subtitles": {
+      "message": "Legendas"
+   },
+   "text_title": {
+      "message": "Alto-falante de legendas"
+   },
+   "text_translate_lang": {
+      "message": "Idioma das legendas"
+   },
+   "text_voice": {
+      "message": "Voz"
+   },
+   "text_volume": {
+      "message": "Volume"
+   }
+}

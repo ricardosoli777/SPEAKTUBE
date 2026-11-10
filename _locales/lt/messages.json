@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Plėtinys konvertuoja „YouTube“ teksto subtitrus į natūraliai skambančią kalbą, naudojant AI technologijas."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Pridėti kalbą"
+   },
+   "text_cancel": {
+      "message": "Atšaukti"
+   },
+   "text_code": {
+      "message": "Kodas"
+   },
+   "text_description": {
+      "message": "„YouTube“ balso subtitrai"
+   },
+   "text_description_small": {
+      "message": "Verskite, mokykitės, bendraukite!"
+   },
+   "text_disabled": {
+      "message": "Išjungta"
+   },
+   "text_enable_off": {
+      "message": "Išjungti"
+   },
+   "text_enable_on": {
+      "message": "Įjungti"
+   },
+   "text_enabled": {
+      "message": "Įjungtas"
+   },
+   "text_max_rate": {
+      "message": "Maksimalus greitis"
+   },
+   "text_name": {
+      "message": "vardas"
+   },
+   "text_pitch": {
+      "message": "Pitch"
+   },
+   "text_rate": {
+      "message": "Numatytasis greitis"
+   },
+   "text_rate_desc": {
+      "message": "Balso greitis"
+   },
+   "text_save": {
+      "message": "Sutaupyti"
+   },
+   "text_slow_down_video": {
+      "message": "Sulėtinkite vaizdo įrašą"
+   },
+   "text_speaking_control": {
+      "message": "Kai balsas atsilieka"
+   },
+   "text_speed_up_voice": {
+      "message": "Paspartinkite balsą"
+   },
+   "text_subtitles": {
+      "message": "Subtitrai"
+   },
+   "text_title": {
+      "message": "Subtitrų garsiakalbis"
+   },
+   "text_translate_lang": {
+      "message": "Subtitrų kalba"
+   },
+   "text_voice": {
+      "message": "Balsas"
+   },
+   "text_volume": {
+      "message": "Apimtis"
+   }
+}

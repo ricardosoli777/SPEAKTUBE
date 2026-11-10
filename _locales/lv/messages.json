@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Paplašinājums pārvērš YouTube teksta subtitrus dabiski skanošā runā, izmantojot Google un Microsoft AI tehnoloģijas."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Pievienot valodu"
+   },
+   "text_cancel": {
+      "message": "Atcelt"
+   },
+   "text_code": {
+      "message": "Kods"
+   },
+   "text_description": {
+      "message": "Balss subtitri pakalpojumam YouTube"
+   },
+   "text_description_small": {
+      "message": "Tulko, mācies, sazinies!"
+   },
+   "text_disabled": {
+      "message": "Atspējots"
+   },
+   "text_enable_off": {
+      "message": "Izslēgt"
+   },
+   "text_enable_on": {
+      "message": "Ieslēgt"
+   },
+   "text_enabled": {
+      "message": "Iespējots"
+   },
+   "text_max_rate": {
+      "message": "Maksimālais ātrums"
+   },
+   "text_name": {
+      "message": "Vārds"
+   },
+   "text_pitch": {
+      "message": "Piķis"
+   },
+   "text_rate": {
+      "message": "Noklusējuma ātrums"
+   },
+   "text_rate_desc": {
+      "message": "Balss ātrums"
+   },
+   "text_save": {
+      "message": "Saglabāt"
+   },
+   "text_slow_down_video": {
+      "message": "Palēnināt video"
+   },
+   "text_speaking_control": {
+      "message": "Kad balss atpaliek"
+   },
+   "text_speed_up_voice": {
+      "message": "Paātriniet balsi"
+   },
+   "text_subtitles": {
+      "message": "Subtitri"
+   },
+   "text_title": {
+      "message": "Subtitru skaļrunis"
+   },
+   "text_translate_lang": {
+      "message": "Subtitru valoda"
+   },
+   "text_voice": {
+      "message": "Balss"
+   },
+   "text_volume": {
+      "message": "Apjoms"
+   }
+}

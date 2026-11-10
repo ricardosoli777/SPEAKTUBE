@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Uzantı, Google ve Microsoft AI teknolojilerini kullanarak YouTube için metin altyazılarını doğal sesli konuşmaya dönüştürür."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Dil Ekle"
+   },
+   "text_cancel": {
+      "message": "İptal"
+   },
+   "text_code": {
+      "message": "kod"
+   },
+   "text_description": {
+      "message": "YouTube için sesli altyazılar"
+   },
+   "text_description_small": {
+      "message": "Çevir, öğren, iletişim kur!"
+   },
+   "text_disabled": {
+      "message": "Engelli"
+   },
+   "text_enable_off": {
+      "message": "Kapatmak"
+   },
+   "text_enable_on": {
+      "message": "Açmak"
+   },
+   "text_enabled": {
+      "message": "Etkinleştirilmiş"
+   },
+   "text_max_rate": {
+      "message": "Azami hız"
+   },
+   "text_name": {
+      "message": "İsim"
+   },
+   "text_pitch": {
+      "message": "Saha"
+   },
+   "text_rate": {
+      "message": "Varsayılan hız"
+   },
+   "text_rate_desc": {
+      "message": "Ses hızı"
+   },
+   "text_save": {
+      "message": "Kaydetmek"
+   },
+   "text_slow_down_video": {
+      "message": "Videoyu yavaşlat"
+   },
+   "text_speaking_control": {
+      "message": "Ses geciktiğinde"
+   },
+   "text_speed_up_voice": {
+      "message": "Sesi hızlandır"
+   },
+   "text_subtitles": {
+      "message": "Altyazılar"
+   },
+   "text_title": {
+      "message": "Altyazı Hoparlörü"
+   },
+   "text_translate_lang": {
+      "message": "Altyazı Dili"
+   },
+   "text_voice": {
+      "message": "Ses"
+   },
+   "text_volume": {
+      "message": "Ses"
+   }
+}

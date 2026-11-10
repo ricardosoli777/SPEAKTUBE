@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Artırma Google və Microsoft AI texnologiyalarından istifadə edərək YouTube üçün mətn altyazılarını təbii səsli nitqə çevirir."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Dil əlavə edin"
+   },
+   "text_cancel": {
+      "message": "Ləğv et"
+   },
+   "text_code": {
+      "message": "Kod"
+   },
+   "text_description": {
+      "message": "YouTube üçün səsli altyazılar"
+   },
+   "text_description_small": {
+      "message": "Tərcümə edin, öyrənin, ünsiyyət qurun!"
+   },
+   "text_disabled": {
+      "message": "Əlil"
+   },
+   "text_enable_off": {
+      "message": "Söndürmək"
+   },
+   "text_enable_on": {
+      "message": "Yandırmaq, qoşmaq"
+   },
+   "text_enabled": {
+      "message": "Aktivdir"
+   },
+   "text_max_rate": {
+      "message": "Maksimum sürət"
+   },
+   "text_name": {
+      "message": "ad"
+   },
+   "text_pitch": {
+      "message": "Pitch"
+   },
+   "text_rate": {
+      "message": "Defolt sürət"
+   },
+   "text_rate_desc": {
+      "message": "Səs sürəti"
+   },
+   "text_save": {
+      "message": "Yadda saxla"
+   },
+   "text_slow_down_video": {
+      "message": "Videonu yavaşlat"
+   },
+   "text_speaking_control": {
+      "message": "Səs ləngidikdə"
+   },
+   "text_speed_up_voice": {
+      "message": "Səsi sürətləndirin"
+   },
+   "text_subtitles": {
+      "message": "Altyazılar"
+   },
+   "text_title": {
+      "message": "Subtitrlər Dinamik"
+   },
+   "text_translate_lang": {
+      "message": "Subtitrlər Dili"
+   },
+   "text_voice": {
+      "message": "Səs"
+   },
+   "text_volume": {
+      "message": "Həcmi"
+   }
+}

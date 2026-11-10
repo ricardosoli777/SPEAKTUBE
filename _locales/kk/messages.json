@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "YouTube үшін мәтіндік субтитрлерді AI технологиясын қолдана отырып, табиғи дыбыстық сөйлеуге түрлендіру."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Тіл қосу"
+   },
+   "text_cancel": {
+      "message": "Болдырмау"
+   },
+   "text_code": {
+      "message": "Код"
+   },
+   "text_description": {
+      "message": "YouTube үшін дауыстық субтитрлер"
+   },
+   "text_description_small": {
+      "message": "Аударыңыз, үйреніңіз, сөйлесіңіз!"
+   },
+   "text_disabled": {
+      "message": "Өшірілген"
+   },
+   "text_enable_off": {
+      "message": "Өшіру"
+   },
+   "text_enable_on": {
+      "message": "Қосу"
+   },
+   "text_enabled": {
+      "message": "Қосылған"
+   },
+   "text_max_rate": {
+      "message": "Максималды жылдамдық"
+   },
+   "text_name": {
+      "message": "Аты"
+   },
+   "text_pitch": {
+      "message": "Қадам"
+   },
+   "text_rate": {
+      "message": "Әдепкі жылдамдық"
+   },
+   "text_rate_desc": {
+      "message": "Дауыс жылдамдығы"
+   },
+   "text_save": {
+      "message": "Сақтау"
+   },
+   "text_slow_down_video": {
+      "message": "Бейнені баяулатыңыз"
+   },
+   "text_speaking_control": {
+      "message": "Дауыс бәсеңдеген кезде"
+   },
+   "text_speed_up_voice": {
+      "message": "Дауысты жылдамдату"
+   },
+   "text_subtitles": {
+      "message": "Субтитрлер"
+   },
+   "text_title": {
+      "message": "Субтитрлер спикері"
+   },
+   "text_translate_lang": {
+      "message": "Субтитрлер тілі"
+   },
+   "text_voice": {
+      "message": "Дауыс"
+   },
+   "text_volume": {
+      "message": "Көлемі"
+   }
+}

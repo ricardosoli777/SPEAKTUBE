@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "ವಿಸ್ತರಣೆಯು ಎಐ ತಂತ್ರಜ್ಞಾನಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಯೂಟ್ಯೂಬ್‌ಗಾಗಿ ಪಠ್ಯ ಉಪಶೀರ್ಷಿಕೆಗಳನ್ನು ನೈಸರ್ಗಿಕ-ಧ್ವನಿ ಭಾಷಣವಾಗಿ ಪರಿವರ್ತಿಸುತ್ತದೆ."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "ಭಾಷೆಯನ್ನು ಸೇರಿಸಿ"
+   },
+   "text_cancel": {
+      "message": "ರದ್ದುಮಾಡಿ"
+   },
+   "text_code": {
+      "message": "ಕೋಡ್"
+   },
+   "text_description": {
+      "message": "YouTube ಗಾಗಿ ಧ್ವನಿ ಉಪಶೀರ್ಷಿಕೆಗಳು"
+   },
+   "text_description_small": {
+      "message": "ಅನುವಾದಿಸಿ, ಕಲಿಯಿರಿ, ಸಂವಹಿಸಿ!"
+   },
+   "text_disabled": {
+      "message": "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+   },
+   "text_enable_off": {
+      "message": "ಆರಿಸು"
+   },
+   "text_enable_on": {
+      "message": "ಸ್ವಿಚ್ ಆನ್ ಮಾಡಿ"
+   },
+   "text_enabled": {
+      "message": "ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+   },
+   "text_max_rate": {
+      "message": "ಗರಿಷ್ಠ ವೇಗ"
+   },
+   "text_name": {
+      "message": "ಹೆಸರು"
+   },
+   "text_pitch": {
+      "message": "ಪಿಚ್"
+   },
+   "text_rate": {
+      "message": "ಡೀಫಾಲ್ಟ್ ವೇಗ"
+   },
+   "text_rate_desc": {
+      "message": "ಧ್ವನಿ ವೇಗ"
+   },
+   "text_save": {
+      "message": "ಉಳಿಸಿ"
+   },
+   "text_slow_down_video": {
+      "message": "ವೀಡಿಯೊವನ್ನು ನಿಧಾನಗೊಳಿಸಿ"
+   },
+   "text_speaking_control": {
+      "message": "ಧ್ವನಿ ಮಂದಗತಿಯಲ್ಲಿದ್ದಾಗ"
+   },
+   "text_speed_up_voice": {
+      "message": "ಧ್ವನಿಯನ್ನು ವೇಗಗೊಳಿಸಿ"
+   },
+   "text_subtitles": {
+      "message": "ಉಪಶೀರ್ಷಿಕೆಗಳು"
+   },
+   "text_title": {
+      "message": "ಉಪಶೀರ್ಷಿಕೆಗಳು ಸ್ಪೀಕರ್"
+   },
+   "text_translate_lang": {
+      "message": "ಉಪಶೀರ್ಷಿಕೆಗಳ ಭಾಷೆ"
+   },
+   "text_voice": {
+      "message": "ಧ್ವನಿ"
+   },
+   "text_volume": {
+      "message": "ಸಂಪುಟ"
+   }
+}

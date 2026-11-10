@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "పొడిగింపు YouTube కోసం టెక్స్ట్ ఉపశీర్షికలను AI టెక్నాలజీలను ఉపయోగించి సహజ ధ్వనించే ప్రసంగానికి మారుస్తుంది."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "భాషను జోడించండి"
+   },
+   "text_cancel": {
+      "message": "రద్దు చేయండి"
+   },
+   "text_code": {
+      "message": "కోడ్"
+   },
+   "text_description": {
+      "message": "YouTube కోసం వాయిస్ ఉపశీర్షికలు"
+   },
+   "text_description_small": {
+      "message": "అనువదించండి, నేర్చుకోండి, కమ్యూనికేట్ చేయండి!"
+   },
+   "text_disabled": {
+      "message": "వికలాంగుడు"
+   },
+   "text_enable_off": {
+      "message": "ఆపి వేయి"
+   },
+   "text_enable_on": {
+      "message": "స్విచ్ ఆన్ చేయండి"
+   },
+   "text_enabled": {
+      "message": "ప్రారంభించబడింది"
+   },
+   "text_max_rate": {
+      "message": "గరిష్ట వేగం"
+   },
+   "text_name": {
+      "message": "పేరు"
+   },
+   "text_pitch": {
+      "message": "పిచ్"
+   },
+   "text_rate": {
+      "message": "డిఫాల్ట్ వేగం"
+   },
+   "text_rate_desc": {
+      "message": "వాయిస్ వేగం"
+   },
+   "text_save": {
+      "message": "సేవ్ చేయండి"
+   },
+   "text_slow_down_video": {
+      "message": "వీడియో వేగాన్ని తగ్గించండి"
+   },
+   "text_speaking_control": {
+      "message": "వాయిస్ వెనుకబడి ఉన్నప్పుడు"
+   },
+   "text_speed_up_voice": {
+      "message": "వాయిస్‌ని వేగవంతం చేయండి"
+   },
+   "text_subtitles": {
+      "message": "ఉపశీర్షికలు"
+   },
+   "text_title": {
+      "message": "ఉపశీర్షికలు స్పీకర్"
+   },
+   "text_translate_lang": {
+      "message": "ఉపశీర్షికల భాష"
+   },
+   "text_voice": {
+      "message": "వాయిస్"
+   },
+   "text_volume": {
+      "message": "వాల్యూమ్"
+   }
+}

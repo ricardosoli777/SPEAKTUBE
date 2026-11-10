@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "நீட்டிப்பு ஏடி தொழில்நுட்பங்களைப் பயன்படுத்தி யூடியூபிற்கான உரை வசன வரிகளை இயற்கையான ஒலி எழுப்பும் உரையாக மாற்றுகிறது."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "மொழியைச் சேர்க்கவும்"
+   },
+   "text_cancel": {
+      "message": "ரத்து செய்"
+   },
+   "text_code": {
+      "message": "குறியீடு"
+   },
+   "text_description": {
+      "message": "YouTube க்கான குரல் வசன வரிகள்"
+   },
+   "text_description_small": {
+      "message": "மொழிபெயர், கற்று, தொடர்பு!"
+   },
+   "text_disabled": {
+      "message": "முடக்கப்பட்டது"
+   },
+   "text_enable_off": {
+      "message": "அனைத்து விடு"
+   },
+   "text_enable_on": {
+      "message": "ஸ்விட்ச் ஆன்"
+   },
+   "text_enabled": {
+      "message": "இயக்கப்பட்டது"
+   },
+   "text_max_rate": {
+      "message": "அதிகபட்ச வேகம்"
+   },
+   "text_name": {
+      "message": "பெயர்"
+   },
+   "text_pitch": {
+      "message": "பிட்ச்"
+   },
+   "text_rate": {
+      "message": "இயல்புநிலை வேகம்"
+   },
+   "text_rate_desc": {
+      "message": "குரல் வேகம்"
+   },
+   "text_save": {
+      "message": "சேமிக்கவும்"
+   },
+   "text_slow_down_video": {
+      "message": "வீடியோவை மெதுவாக்குங்கள்"
+   },
+   "text_speaking_control": {
+      "message": "குரல் தாமதமாக இருக்கும்போது"
+   },
+   "text_speed_up_voice": {
+      "message": "குரலை விரைவுபடுத்துங்கள்"
+   },
+   "text_subtitles": {
+      "message": "வசன வரிகள்"
+   },
+   "text_title": {
+      "message": "வசன பேச்சாளர்"
+   },
+   "text_translate_lang": {
+      "message": "வசன மொழி"
+   },
+   "text_voice": {
+      "message": "குரல்"
+   },
+   "text_volume": {
+      "message": "தொகுதி"
+   }
+}

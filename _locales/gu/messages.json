@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "એક્સ્ટેંશન એયુ ટેકનોલોજીનો ઉપયોગ કરીને યુ ટ્યુબ માટે ટેક્સ્ટ સબટાઈટલ નેચરલ સાઉન્ડિંગ સ્પીચમાં કન્વર્ટ કરે છે."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "ભાષા ઉમેરો"
+   },
+   "text_cancel": {
+      "message": "રદ કરો"
+   },
+   "text_code": {
+      "message": "કોડ"
+   },
+   "text_description": {
+      "message": "YouTube માટે વૉઇસ સબટાઈટલ"
+   },
+   "text_description_small": {
+      "message": "અનુવાદ કરો, શીખો, વાતચીત કરો!"
+   },
+   "text_disabled": {
+      "message": "અક્ષમ"
+   },
+   "text_enable_off": {
+      "message": "બંધ કરો"
+   },
+   "text_enable_on": {
+      "message": "ચાલુ કરવું"
+   },
+   "text_enabled": {
+      "message": "સક્ષમ"
+   },
+   "text_max_rate": {
+      "message": "મહત્તમ ઝડપ"
+   },
+   "text_name": {
+      "message": "નામ"
+   },
+   "text_pitch": {
+      "message": "પીચ"
+   },
+   "text_rate": {
+      "message": "ડિફૉલ્ટ ઝડપ"
+   },
+   "text_rate_desc": {
+      "message": "અવાજની ઝડપ"
+   },
+   "text_save": {
+      "message": "સાચવો"
+   },
+   "text_slow_down_video": {
+      "message": "વિડિયો ધીમો કરો"
+   },
+   "text_speaking_control": {
+      "message": "જ્યારે અવાજ પાછળ રહે છે"
+   },
+   "text_speed_up_voice": {
+      "message": "અવાજને વેગ આપો"
+   },
+   "text_subtitles": {
+      "message": "સબટાઈટલ"
+   },
+   "text_title": {
+      "message": "સબટાઈટલ સ્પીકર"
+   },
+   "text_translate_lang": {
+      "message": "સબટાઈટલ ભાષા"
+   },
+   "text_voice": {
+      "message": "અવાજ"
+   },
+   "text_volume": {
+      "message": "વોલ્યુમ"
+   }
+}

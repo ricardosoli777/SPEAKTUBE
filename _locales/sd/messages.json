@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "توسيع يوٽيوب لاءِ ٽيڪسٽ سب ٽائٽلز کي بدلائي ٿو قدرتي آواز واري تقرير ۾ AI ٽيڪنالاجي استعمال ڪندي."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "ٻولي شامل ڪريو"
+   },
+   "text_cancel": {
+      "message": "منسوخ ڪريو"
+   },
+   "text_code": {
+      "message": "ڪوڊ"
+   },
+   "text_description": {
+      "message": "يوٽيوب لاءِ وائس سب ٽائيٽل"
+   },
+   "text_description_small": {
+      "message": "ترجمو ڪريو، سکو، گفتگو ڪريو!"
+   },
+   "text_disabled": {
+      "message": "معذور"
+   },
+   "text_enable_off": {
+      "message": "بند ڪيو"
+   },
+   "text_enable_on": {
+      "message": "کولڻ"
+   },
+   "text_enabled": {
+      "message": "چالو ڪيو"
+   },
+   "text_max_rate": {
+      "message": "وڌ ۾ وڌ رفتار"
+   },
+   "text_name": {
+      "message": "نالو"
+   },
+   "text_pitch": {
+      "message": "پچڻ"
+   },
+   "text_rate": {
+      "message": "ڊفالٽ رفتار"
+   },
+   "text_rate_desc": {
+      "message": "آواز جي رفتار"
+   },
+   "text_save": {
+      "message": "بچايو"
+   },
+   "text_slow_down_video": {
+      "message": "وڊيو کي سست ڪريو"
+   },
+   "text_speaking_control": {
+      "message": "جڏهن آواز گونجندو آهي"
+   },
+   "text_speed_up_voice": {
+      "message": "آواز کي تيز ڪريو"
+   },
+   "text_subtitles": {
+      "message": "ذيلي عنوان"
+   },
+   "text_title": {
+      "message": "ذيلي عنوان اسپيڪر"
+   },
+   "text_translate_lang": {
+      "message": "ذيلي عنوان جي ٻولي"
+   },
+   "text_voice": {
+      "message": "آواز"
+   },
+   "text_volume": {
+      "message": "حجم"
+   }
+}

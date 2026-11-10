@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "برنامه افزودنی ، زیرنویس های متنی YouTube را با استفاده از فناوری های هوش مصنوعی Google و Microsoft به گفتار طبیعی تبدیل می کند."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "اضافه کردن زبان"
+   },
+   "text_cancel": {
+      "message": "لغو کنید"
+   },
+   "text_code": {
+      "message": "کد"
+   },
+   "text_description": {
+      "message": "زیرنویس صوتی برای یوتیوب"
+   },
+   "text_description_small": {
+      "message": "ترجمه کنید، یاد بگیرید، ارتباط برقرار کنید!"
+   },
+   "text_disabled": {
+      "message": "معلول"
+   },
+   "text_enable_off": {
+      "message": "خاموش کن"
+   },
+   "text_enable_on": {
+      "message": "روشن کنید"
+   },
+   "text_enabled": {
+      "message": "فعال شد"
+   },
+   "text_max_rate": {
+      "message": "حداکثر سرعت، بیشینه سرعت"
+   },
+   "text_name": {
+      "message": "نام"
+   },
+   "text_pitch": {
+      "message": "گام صدا"
+   },
+   "text_rate": {
+      "message": "سرعت پیش فرض"
+   },
+   "text_rate_desc": {
+      "message": "سرعت صدا"
+   },
+   "text_save": {
+      "message": "صرفه جویی"
+   },
+   "text_slow_down_video": {
+      "message": "ویدیو را کم کنید"
+   },
+   "text_speaking_control": {
+      "message": "وقتی صدا عقب می افتد"
+   },
+   "text_speed_up_voice": {
+      "message": "سرعت صدا را افزایش دهید"
+   },
+   "text_subtitles": {
+      "message": "زیرنویس"
+   },
+   "text_title": {
+      "message": "بلندگوی زیرنویس"
+   },
+   "text_translate_lang": {
+      "message": "زبان زیرنویس"
+   },
+   "text_voice": {
+      "message": "صدا"
+   },
+   "text_volume": {
+      "message": "جلد"
+   }
+}

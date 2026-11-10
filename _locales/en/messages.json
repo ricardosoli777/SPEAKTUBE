@@ -1,0 +1,80 @@
+{
+   "extension_description": {
+      "message": "Extension convert text subtitles for YouTube into natural-sounding speech using AI technologies."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Add Language"
+   },
+   "text_cancel": {
+      "message": "Cancel"
+   },
+   "text_code": {
+      "message": "Code"
+   },
+   "text_description": {
+      "message": "Voice subtitles for YouTube"
+   },
+   "text_description_small": {
+      "message": "Translate, learn, communicate!"
+   },
+   "text_disabled": {
+      "message": "Disabled"
+   },
+   "text_enable_off": {
+      "message": "Switch Off"
+   },
+   "text_enable_on": {
+      "message": "Switch On"
+   },
+   "text_enabled": {
+      "message": "Enabled"
+   },
+   "text_max_rate": {
+      "message": "Maximum speed"
+   },
+   "text_name": {
+      "message": "Name"
+   },
+   "text_pitch": {
+      "message": "Pitch"
+   },
+   "text_rate": {
+      "message": "Default speed"
+   },
+   "text_rate_desc": {
+      "message": "Voice speed"
+   },
+   "text_save": {
+      "message": "Save"
+   },
+   "text_slow_down_video": {
+      "message": "Slow down video"
+   },
+   "text_speaking_control": {
+      "message": "When the voice is lagging"
+   },
+   "text_speed_up_voice": {
+      "message": "Speed up the voice"
+   },
+   "text_subtitles": {
+      "message": "Subtitles"
+   },
+   "text_title": {
+      "message": "Subtitles Speaker"
+   },
+   "text_translate_lang": {
+      "message": "Subtitles Language"
+   },
+   "text_ui_lang": {
+      "message": "UI Lang"
+   },
+   "text_voice": {
+      "message": "Voice"
+   },
+   "text_volume": {
+      "message": "Volume"
+   }
+}

@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "A kiterjesztés átalakítja a YouTube szöveges feliratait természetes hangzású beszéddé az AI technológiák segítségével."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Nyelv hozzáadása elemre"
+   },
+   "text_cancel": {
+      "message": "Megszünteti"
+   },
+   "text_code": {
+      "message": "Kód"
+   },
+   "text_description": {
+      "message": "Hangfeliratok a YouTube-hoz"
+   },
+   "text_description_small": {
+      "message": "Fordíts, tanulj, kommunikálj!"
+   },
+   "text_disabled": {
+      "message": "Tiltva"
+   },
+   "text_enable_off": {
+      "message": "Kikapcsol"
+   },
+   "text_enable_on": {
+      "message": "Bekapcsol"
+   },
+   "text_enabled": {
+      "message": "Engedélyezve"
+   },
+   "text_max_rate": {
+      "message": "Maximális sebesség"
+   },
+   "text_name": {
+      "message": "Név"
+   },
+   "text_pitch": {
+      "message": "Hangmagasság"
+   },
+   "text_rate": {
+      "message": "Alapértelmezett sebesség"
+   },
+   "text_rate_desc": {
+      "message": "Hang sebessége"
+   },
+   "text_save": {
+      "message": "Megment"
+   },
+   "text_slow_down_video": {
+      "message": "Lassítsd le a videót"
+   },
+   "text_speaking_control": {
+      "message": "Amikor a hang lemarad"
+   },
+   "text_speed_up_voice": {
+      "message": "Gyorsítsa fel a hangot"
+   },
+   "text_subtitles": {
+      "message": "Feliratok"
+   },
+   "text_title": {
+      "message": "Feliratok hangszórója"
+   },
+   "text_translate_lang": {
+      "message": "Feliratok nyelve"
+   },
+   "text_voice": {
+      "message": "Hang"
+   },
+   "text_volume": {
+      "message": "Hangerő"
+   }
+}

@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "विस्तार यूट्यूबसाठी मजकूर उपशीर्षके एआय तंत्रज्ञानाचा वापर करून नैसर्गिक ध्वनी भाषणात रूपांतरित करतो."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "भाषा जोडा"
+   },
+   "text_cancel": {
+      "message": "रद्द करा"
+   },
+   "text_code": {
+      "message": "कोड"
+   },
+   "text_description": {
+      "message": "YouTube साठी आवाज उपशीर्षके"
+   },
+   "text_description_small": {
+      "message": "भाषांतर करा, शिका, संप्रेषण करा!"
+   },
+   "text_disabled": {
+      "message": "अक्षम"
+   },
+   "text_enable_off": {
+      "message": "बंद कर"
+   },
+   "text_enable_on": {
+      "message": "चालू करा"
+   },
+   "text_enabled": {
+      "message": "सक्षम केले"
+   },
+   "text_max_rate": {
+      "message": "कमाल वेग"
+   },
+   "text_name": {
+      "message": "नाव"
+   },
+   "text_pitch": {
+      "message": "खेळपट्टी"
+   },
+   "text_rate": {
+      "message": "डीफॉल्ट गती"
+   },
+   "text_rate_desc": {
+      "message": "आवाजाचा वेग"
+   },
+   "text_save": {
+      "message": "जतन करा"
+   },
+   "text_slow_down_video": {
+      "message": "व्हिडिओ हळू करा"
+   },
+   "text_speaking_control": {
+      "message": "जेव्हा आवाज मागे पडतो"
+   },
+   "text_speed_up_voice": {
+      "message": "आवाजाचा वेग वाढवा"
+   },
+   "text_subtitles": {
+      "message": "उपशीर्षके"
+   },
+   "text_title": {
+      "message": "उपशीर्षक स्पीकर"
+   },
+   "text_translate_lang": {
+      "message": "उपशीर्षक भाषा"
+   },
+   "text_voice": {
+      "message": "आवाज"
+   },
+   "text_volume": {
+      "message": "खंड"
+   }
+}

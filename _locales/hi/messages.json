@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "एक्सटेंशन एआई तकनीकों का उपयोग करके YouTube के लिए टेक्स्ट उपशीर्षक को नेचुरल-साउंडिंग स्पीच में परिवर्तित करता है।"
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "भाषा जोड़ें"
+   },
+   "text_cancel": {
+      "message": "रद्द करें"
+   },
+   "text_code": {
+      "message": "कोड"
+   },
+   "text_description": {
+      "message": "YouTube के लिए ध्वनि उपशीर्षक"
+   },
+   "text_description_small": {
+      "message": "अनुवाद करें, सीखें, संवाद करें!"
+   },
+   "text_disabled": {
+      "message": "विकलांग"
+   },
+   "text_enable_off": {
+      "message": "बंद करना"
+   },
+   "text_enable_on": {
+      "message": "चालू करना"
+   },
+   "text_enabled": {
+      "message": "सक्रिय"
+   },
+   "text_max_rate": {
+      "message": "अधिकतम गति"
+   },
+   "text_name": {
+      "message": "नाम"
+   },
+   "text_pitch": {
+      "message": "आवाज़ का उतार - चढ़ाव"
+   },
+   "text_rate": {
+      "message": "डिफ़ॉल्ट गति"
+   },
+   "text_rate_desc": {
+      "message": "आवाज की गति"
+   },
+   "text_save": {
+      "message": "सहेजें"
+   },
+   "text_slow_down_video": {
+      "message": "वीडियो धीमा करें"
+   },
+   "text_speaking_control": {
+      "message": "जब आवाज पिछड़ रही हो"
+   },
+   "text_speed_up_voice": {
+      "message": "आवाज तेज करें"
+   },
+   "text_subtitles": {
+      "message": "उपशीर्षक"
+   },
+   "text_title": {
+      "message": "उपशीर्षक अध्यक्ष"
+   },
+   "text_translate_lang": {
+      "message": "उपशीर्षक भाषा"
+   },
+   "text_voice": {
+      "message": "आवाज़"
+   },
+   "text_volume": {
+      "message": "आयतन"
+   }
+}

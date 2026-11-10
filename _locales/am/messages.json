@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "ማራዘሚያ በGoogle እና በማይክሮሶፍት AI ቴክኖሎጂዎች የተጎላበተውን የዩቲዩብ የጽሑፍ ንዑስ ርዕሶችን ወደ ተፈጥሯዊ ድምጽ ወደሚሰጥ ንግግር ይለውጣል።"
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "ቋንቋ ጨምር"
+   },
+   "text_cancel": {
+      "message": "ሰርዝ"
+   },
+   "text_code": {
+      "message": "ኮድ"
+   },
+   "text_description": {
+      "message": "ለYouTube የድምጽ የትርጉም ጽሑፎች"
+   },
+   "text_description_small": {
+      "message": "ተርጉም፣ ተማር፣ ተግባባ!"
+   },
+   "text_disabled": {
+      "message": "ተሰናክሏል።"
+   },
+   "text_enable_off": {
+      "message": "አጥፋ"
+   },
+   "text_enable_on": {
+      "message": "አብራ"
+   },
+   "text_enabled": {
+      "message": "ነቅቷል"
+   },
+   "text_max_rate": {
+      "message": "ከፍተኛው ፍጥነት"
+   },
+   "text_name": {
+      "message": "ስም"
+   },
+   "text_pitch": {
+      "message": "ጫጫታ"
+   },
+   "text_rate": {
+      "message": "ነባሪ ፍጥነት"
+   },
+   "text_rate_desc": {
+      "message": "የድምጽ ፍጥነት"
+   },
+   "text_save": {
+      "message": "አስቀምጥ"
+   },
+   "text_slow_down_video": {
+      "message": "ቪዲዮውን ቀስ አድርገው"
+   },
+   "text_speaking_control": {
+      "message": "ድምፁ በሚዘገይበት ጊዜ"
+   },
+   "text_speed_up_voice": {
+      "message": "ድምጹን ያፋጥኑ"
+   },
+   "text_subtitles": {
+      "message": "የትርጉም ጽሑፎች"
+   },
+   "text_title": {
+      "message": "የትርጉም ጽሑፎች ተናጋሪ"
+   },
+   "text_translate_lang": {
+      "message": "የትርጉም ጽሑፎች ቋንቋ"
+   },
+   "text_voice": {
+      "message": "ድምፅ"
+   },
+   "text_volume": {
+      "message": "ድምጽ"
+   }
+}

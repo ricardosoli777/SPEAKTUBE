@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Erweiterung wandelt Textuntertitel für YouTube mithilfe von KI-Technologien in natürlich klingende Sprache um."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Sprache hinzufügen"
+   },
+   "text_cancel": {
+      "message": "Abbrechen"
+   },
+   "text_code": {
+      "message": "Code"
+   },
+   "text_description": {
+      "message": "Sprachuntertitel für YouTube"
+   },
+   "text_description_small": {
+      "message": "Übersetzen, lernen, kommunizieren!"
+   },
+   "text_disabled": {
+      "message": "Behinderte"
+   },
+   "text_enable_off": {
+      "message": "Ausschalten"
+   },
+   "text_enable_on": {
+      "message": "Einschalten"
+   },
+   "text_enabled": {
+      "message": "Ermöglicht"
+   },
+   "text_max_rate": {
+      "message": "Maximale Geschwindigkeit"
+   },
+   "text_name": {
+      "message": "Name"
+   },
+   "text_pitch": {
+      "message": "Tonhöhe"
+   },
+   "text_rate": {
+      "message": "Standardgeschwindigkeit"
+   },
+   "text_rate_desc": {
+      "message": "Sprachgeschwindigkeit"
+   },
+   "text_save": {
+      "message": "Speichern"
+   },
+   "text_slow_down_video": {
+      "message": "Video verlangsamen"
+   },
+   "text_speaking_control": {
+      "message": "Wenn die Stimme nachlässt"
+   },
+   "text_speed_up_voice": {
+      "message": "Beschleunige die Stimme"
+   },
+   "text_subtitles": {
+      "message": "Untertitel"
+   },
+   "text_title": {
+      "message": "Untertitel Sprecher"
+   },
+   "text_translate_lang": {
+      "message": "Untertitel Sprache"
+   },
+   "text_voice": {
+      "message": "Stimme"
+   },
+   "text_volume": {
+      "message": "Volumen"
+   }
+}

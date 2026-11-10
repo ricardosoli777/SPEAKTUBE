@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Laiendus muudab YouTube'i tekstid loomulikuks kõneks, kasutades Google'i ja Microsofti tehisintellekti tehnoloogiaid."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Lisa keel"
+   },
+   "text_cancel": {
+      "message": "Tühista"
+   },
+   "text_code": {
+      "message": "Kood"
+   },
+   "text_description": {
+      "message": "Häälsubtiitrid YouTube'i jaoks"
+   },
+   "text_description_small": {
+      "message": "Tõlgi, õpi, suhtle!"
+   },
+   "text_disabled": {
+      "message": "Keelatud"
+   },
+   "text_enable_off": {
+      "message": "Välja lülitama"
+   },
+   "text_enable_on": {
+      "message": "Sisse lülitama"
+   },
+   "text_enabled": {
+      "message": "Lubatud"
+   },
+   "text_max_rate": {
+      "message": "Maksimaalne kiirus"
+   },
+   "text_name": {
+      "message": "Nimi"
+   },
+   "text_pitch": {
+      "message": "Pitch"
+   },
+   "text_rate": {
+      "message": "Vaikimisi kiirus"
+   },
+   "text_rate_desc": {
+      "message": "Hääle kiirus"
+   },
+   "text_save": {
+      "message": "Salvesta"
+   },
+   "text_slow_down_video": {
+      "message": "Aeglustage videot"
+   },
+   "text_speaking_control": {
+      "message": "Kui hääl jääb maha"
+   },
+   "text_speed_up_voice": {
+      "message": "Kiirendage häält"
+   },
+   "text_subtitles": {
+      "message": "Subtiitrid"
+   },
+   "text_title": {
+      "message": "Subtiitrite kõlar"
+   },
+   "text_translate_lang": {
+      "message": "Subtiitrite keel"
+   },
+   "text_voice": {
+      "message": "Hääl"
+   },
+   "text_volume": {
+      "message": "Helitugevus"
+   }
+}

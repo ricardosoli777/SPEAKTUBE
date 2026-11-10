@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Rozšíření převádí textové titulky pro YouTube na přirozeně znějící řeč pomocí technologií Google a Microsoft AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Přidat jazyk"
+   },
+   "text_cancel": {
+      "message": "zrušení"
+   },
+   "text_code": {
+      "message": "Kód"
+   },
+   "text_description": {
+      "message": "Hlasové titulky pro YouTube"
+   },
+   "text_description_small": {
+      "message": "Překládat, učit se, komunikovat!"
+   },
+   "text_disabled": {
+      "message": "Zakázáno"
+   },
+   "text_enable_off": {
+      "message": "Vypnout"
+   },
+   "text_enable_on": {
+      "message": "Zapnout"
+   },
+   "text_enabled": {
+      "message": "Povoleno"
+   },
+   "text_max_rate": {
+      "message": "Maximální rychlost"
+   },
+   "text_name": {
+      "message": "název"
+   },
+   "text_pitch": {
+      "message": "Rozteč"
+   },
+   "text_rate": {
+      "message": "Výchozí rychlost"
+   },
+   "text_rate_desc": {
+      "message": "Rychlost hlasu"
+   },
+   "text_save": {
+      "message": "Uložit"
+   },
+   "text_slow_down_video": {
+      "message": "Zpomalte video"
+   },
+   "text_speaking_control": {
+      "message": "Když hlas zaostává"
+   },
+   "text_speed_up_voice": {
+      "message": "Zrychlete hlas"
+   },
+   "text_subtitles": {
+      "message": "titulky"
+   },
+   "text_title": {
+      "message": "Reproduktor titulků"
+   },
+   "text_translate_lang": {
+      "message": "Jazyk titulků"
+   },
+   "text_voice": {
+      "message": "Hlas"
+   },
+   "text_volume": {
+      "message": "Objem"
+   }
+}

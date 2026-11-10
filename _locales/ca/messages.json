@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "L'extensió converteix els subtítols de text de YouTube en veu de so natural mitjançant les tecnologies de Google AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Afegeix un idioma"
+   },
+   "text_cancel": {
+      "message": "Cancel · lar"
+   },
+   "text_code": {
+      "message": "Codi"
+   },
+   "text_description": {
+      "message": "Subtítols de veu per a YouTube"
+   },
+   "text_description_small": {
+      "message": "Tradueix, aprèn, comunica!"
+   },
+   "text_disabled": {
+      "message": "Inhabilitat"
+   },
+   "text_enable_off": {
+      "message": "Apagar"
+   },
+   "text_enable_on": {
+      "message": "Encendre"
+   },
+   "text_enabled": {
+      "message": "Habilitat"
+   },
+   "text_max_rate": {
+      "message": "Velocitat màxima"
+   },
+   "text_name": {
+      "message": "Nom"
+   },
+   "text_pitch": {
+      "message": "Brea"
+   },
+   "text_rate": {
+      "message": "Velocitat per defecte"
+   },
+   "text_rate_desc": {
+      "message": "Velocitat de la veu"
+   },
+   "text_save": {
+      "message": "Desa"
+   },
+   "text_slow_down_video": {
+      "message": "Redueix el vídeo"
+   },
+   "text_speaking_control": {
+      "message": "Quan la veu està endarrerida"
+   },
+   "text_speed_up_voice": {
+      "message": "Accelera la veu"
+   },
+   "text_subtitles": {
+      "message": "Subtítols"
+   },
+   "text_title": {
+      "message": "Altaveu de subtítols"
+   },
+   "text_translate_lang": {
+      "message": "Idioma dels subtítols"
+   },
+   "text_voice": {
+      "message": "veu"
+   },
+   "text_volume": {
+      "message": "Volum"
+   }
+}

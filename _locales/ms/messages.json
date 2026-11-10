@@ -1,0 +1,77 @@
+{
+   "extension_description": {
+      "message": "Sambungan menukar sari kata teks untuk YouTube menjadi ucapan semula jadi dengan menggunakan teknologi AI."
+   },
+   "extension_name": {
+      "message": "SpeakTube"
+   },
+   "text_add_custom_lang": {
+      "message": "Tambah Bahasa"
+   },
+   "text_cancel": {
+      "message": "Batal"
+   },
+   "text_code": {
+      "message": "Kod"
+   },
+   "text_description": {
+      "message": "Sari kata suara untuk YouTube"
+   },
+   "text_description_small": {
+      "message": "Terjemah, belajar, berkomunikasi!"
+   },
+   "text_disabled": {
+      "message": "Dilumpuhkan"
+   },
+   "text_enable_off": {
+      "message": "Tutup"
+   },
+   "text_enable_on": {
+      "message": "Buka"
+   },
+   "text_enabled": {
+      "message": "Didayakan"
+   },
+   "text_max_rate": {
+      "message": "Kelajuan maksimum"
+   },
+   "text_name": {
+      "message": "Nama"
+   },
+   "text_pitch": {
+      "message": "Pitch"
+   },
+   "text_rate": {
+      "message": "Kelajuan lalai"
+   },
+   "text_rate_desc": {
+      "message": "Kelajuan suara"
+   },
+   "text_save": {
+      "message": "Jimat"
+   },
+   "text_slow_down_video": {
+      "message": "Perlahankan video"
+   },
+   "text_speaking_control": {
+      "message": "Apabila suara itu ketinggalan"
+   },
+   "text_speed_up_voice": {
+      "message": "Mempercepatkan suara"
+   },
+   "text_subtitles": {
+      "message": "Sari kata"
+   },
+   "text_title": {
+      "message": "Sarikata Penceramah"
+   },
+   "text_translate_lang": {
+      "message": "Bahasa Sarikata"
+   },
+   "text_voice": {
+      "message": "Suara"
+   },
+   "text_volume": {
+      "message": "Kelantangan"
+   }
+}
