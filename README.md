@@ -75,3 +75,5 @@ A validação local não substitui teste em todos os computadores, redes e polí
 A abertura automática da página de instalação foi removida. O Mac não faz requisições de catálogo/síntese ao Edge TTS e não pede o instalador Windows. As vozes são descobertas pela API nativa, incluindo vozes carregadas posteriormente. Não há promessa de que todo Mac já tenha todas as variantes/idiomas instalados.
 
 A lógica Mac foi testada em simulação e o painel foi conferido com plataforma Mac simulada; não foi testado em um Mac físico nesta sessão. A prévia de voz nativa foi reproduzida no Chrome do Windows. O instalador de voz 1.0.0 permanece o mesmo executável já validado.
+
+A primeira descoberta de legendas pode aguardar ate 30 segundos pelos dados do player, sem fazer leituras HTTP repetidas. Um player pausado com metadados e faixa de legenda disponiveis tambem e aceito. Essa espera local nao reintroduz novas tentativas depois de falha HTTP.

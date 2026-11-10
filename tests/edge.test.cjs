@@ -23,3 +23,9 @@ test('invalidated extension context is distinguished from Edge service outage',a
  const value=item();let error;value.onerror=e=>error=e.error;await engine.speak(value);
  assert.equal(error,'extension-reloaded');assert.equal(engine.pending,false);
 });
+
+
+test('audio playback failures expose the media error and clear playback state',async()=>{
+ let audio,error;const engine=createEdgeSpeech(async()=>({audio:Buffer.from('ID3audio').toString('base64')}),()=>audio=new AudioFixture());const value=item();value.onerror=e=>error=e;
+ await engine.speak(value);audio.error={code:4};audio.onerror();assert.equal(error.error,'audio-playback');assert.match(error.message,/4/);assert.equal(engine.speaking,false);assert.equal(engine.pending,false);
+});

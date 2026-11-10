@@ -34,7 +34,7 @@
      let started=false;
      audio.onplaying=()=>{if(token!==generation||started)return;started=true;engine.pending=false;engine.speaking=true;item.onstart?.({duration:Number.isFinite(audio.duration)?audio.duration*1000/audio.playbackRate:null})};
      audio.onended=()=>{if(token!==generation)return;engine.cancel();item.onend?.({})};
-     audio.onerror=()=>{if(token!==generation)return;engine.cancel();item.onerror?.({error:'audio-playback'})};
+     audio.onerror=()=>{if(token!==generation)return;const code=audio.error?.code;engine.lastError='Falha ao reproduzir audio do Edge TTS'+(code?' (codigo '+code+')':'')+'.';root.SpeakTubeDiagnostics?.record('audio-error',{code});engine.cancel();item.onerror?.({error:'audio-playback',message:engine.lastError})};
      await audio.play();
     }catch(error){if(token===generation){engine.lastError=error.message;engine.cancel();item.onerror?.({error:contextInvalid(error)?'extension-reloaded':'edge-unavailable',message:error.message})}}
    },

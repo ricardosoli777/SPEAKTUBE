@@ -132,7 +132,7 @@ function captionDiscoveryFixture({enabled=false,captured=true,nativeToggle=false
  const player={getAppState:()=>5,isSubtitlesOn:()=>enabled,querySelector:()=>control,getPlayerResponse:()=>({captions:{playerCaptionsTracklistRenderer:{captionTracks:[{languageCode:'en',baseUrl:'https://www.youtube.com/api/timedtext?v=test&lang=en'}]}}})};
  if(nativeToggle)player.toggleSubtitles=()=>{enabled=!enabled;toggles++;order.push('toggle')};
  const m={getPlayer:()=>player};
- return {player,m,run:()=>context.discover(m,{options:{translate_lang:'pt',enable:1}},{sendSW(message,callback){order.push('request');const available=typeof captured==='function'?captured(toggles):captured;callback({timedtext:available?'https://www.youtube.com/api/timedtext?v=test&lang=en&playback=ready':null})}}),getClicks:()=>clicks,getToggles:()=>toggles,order};
+ return {player,m,context,run:()=>context.discover(m,{options:{translate_lang:'pt',enable:1}},{sendSW(message,callback){order.push('request');const available=typeof captured==='function'?captured(toggles):captured;callback({timedtext:available?'https://www.youtube.com/api/timedtext?v=test&lang=en&playback=ready':null})}}),getClicks:()=>clicks,getToggles:()=>toggles,order};
 }
 
 test('caption discovery enables native captions before selecting the captured playback URL',async()=>{
@@ -239,4 +239,19 @@ test('Mac voice setup does not try to contact the Windows native host',async()=>
 test('manual compatible Edge server is recognized without requiring a new installer',async()=>{
  const f=backgroundFixture();addNetworkFixture(f,async()=>({ok:true,json:async()=>({engine:'edge-tts',extension_id:'test'})}));let nativeCalls=0;f.chrome.runtime.sendNativeMessage=()=>nativeCalls++;
  const result=await new Promise(resolve=>f.handlers.internal({question:'voice_service_status'},{id:'test'},resolve));assert.equal(result.running,true);assert.equal(result.requiresInstaller,false);assert.equal(nativeCalls,0);
+});
+
+
+test('first caption discovery keeps waiting locally while the player initializes',async()=>{
+ const f=captionDiscoveryFixture();let reads=0;f.player.getAppState=()=>++reads<12?0:5;assert.ok(await f.run());assert.equal(reads,12);assert.deepEqual(f.order,['enable','request']);
+});
+
+test('paused player with metadata and a caption track is ready for initial discovery',async()=>{
+ const f=captionDiscoveryFixture();const query=f.player.querySelector;f.player.getAppState=()=>4;f.player.querySelector=selector=>selector==='video'?{readyState:1,paused:true}:query(selector);assert.ok(await f.run());assert.deepEqual(f.order,['enable','request']);
+});
+
+
+test('initial player wait has a deadline and makes no HTTP request while unready',async()=>{
+ const f=captionDiscoveryFixture();let now=0;f.context.Date={now:()=>now+=15000};f.player.getAppState=()=>0;
+ await assert.rejects(f.run(),/player ainda nao disponibilizou/);assert.deepEqual(f.order,[]);
 });

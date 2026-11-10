@@ -39,7 +39,7 @@
    }
   }
  }
- window.SpeakTubeDiagnostics?.update({controllerRevision:"captions-20261110-v5-no-retries",playerPage:m.isPlayerPage(),liveValue:String(m.getPlayerData("isLive")),videoMs:Math.round(m.currentTime*1000)||0,index:m.index,total:_.tts.length,playing:g.state.playerState===1,videoRate:m.getPlaybackRate(),pending:YSSVoiceEngine.pending,speaking:YSSVoiceEngine.speaking,mode:g.options.speaking_control});
+ window.SpeakTubeDiagnostics?.update({controllerRevision:"speech-20261110-v1.4.0",voiceBackend:YSSVoiceEngine.backend||(YSSVoiceEngine.isEdge?"edge":"native"),voicePlatform:YSSVoiceEngine.platform||"unknown",voiceCount:YSSVoiceEngine.getVoices().length,narrationVolume:g.options.volume,playerPage:m.isPlayerPage(),liveValue:String(m.getPlayerData("isLive")),videoMs:Math.round(m.currentTime*1000)||0,index:m.index,total:_.tts.length,playing:g.state.playerState===1,videoRate:m.getPlaybackRate(),pending:YSSVoiceEngine.pending,speaking:YSSVoiceEngine.speaking,mode:g.options.speaking_control});
  r.init(g.options,g.config.ytPlayerSelector,a.sendSW,_.haveSubtitles());
  if(g.options.enable&&_.haveSubtitles()){for(const item of _.tts.slice(m.index,m.index+2)){YSSVoiceEngine.prefetch?.({text:item.text,voice:m.getSpeechVoice(),pitch:g.options.pitch}).catch(()=>{})}m._observer.time();m.syncNaturalPlayback();m.speak()}
  a.setTitle();
@@ -129,14 +129,19 @@ const getUrlX = async (m,g,a) => {
    return url.href;
   }catch{return ''}
  };
- for(let attempt=0;attempt<8;attempt++){
+ const readyDeadline=Date.now()+30000;
+ for(let attempt=0;attempt<8;){
   if(document.URL!==page||!g.options.enable)return '';
   const player=m.getPlayer();
-  if(typeof player?.getAppState==='function'&&player.getAppState()!==5){
-   window.SpeakTubeDiagnostics?.update({captionAttempt:attempt,captionPlayerReady:false});await wait(400);continue;
-  }
   const primary=player?.getPlayerResponse?.()?.captions?.playerCaptionsTracklistRenderer?.captionTracks;
   const tracks=primary?.length?primary:player?.getAudioTrack?.()?.captionTracks||[];
+  const media=player?.querySelector?.('video'),appState=player?.getAppState?.();
+  const ready=typeof player?.getAppState!=='function'||appState===5||(media?.readyState>=1&&tracks.length>0);
+  if(!ready){
+   window.SpeakTubeDiagnostics?.update({captionAttempt:attempt,captionPlayerReady:false,captionAppState:appState,mediaReadyState:media?.readyState});
+   if(Date.now()>=readyDeadline)throw Error('O player ainda nao disponibilizou as legendas. Inicie o video e reative a narracao.');
+   await wait(400);continue;
+  }
   window.SpeakTubeDiagnostics?.update({captionAttempt:attempt,captionTracks:tracks.length,captionPlayerReady:true});
   const control=player?.querySelector?.('.ytp-subtitles-button');
   if(tracks.length&&m.captionDiscoveryVideo!==videoId){
@@ -159,7 +164,7 @@ const getUrlX = async (m,g,a) => {
    if(document.URL!==page)return '';
    player.toggleSubtitles();
   }
-  await wait(400);
+  attempt++;await wait(400);
  }
  return '';
 };
