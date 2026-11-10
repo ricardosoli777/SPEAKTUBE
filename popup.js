@@ -105,7 +105,9 @@
   try{stopPreview()}catch{}
   try{Promise.resolve(chrome.runtime.sendMessage({question:'close_panel'})).catch(()=>{})}catch{}
  });
+ document.getElementById("voice-setup-link").onclick=()=>window.open(chrome.runtime.getURL("setup.html"),"_blank","noopener");
  window.addEventListener('keydown',event=>{if(event.key==='Escape')$('close-panel').click()});
+ document.getElementById("voice-setup-link").onclick=()=>window.open(chrome.runtime.getURL("setup.html"),"_blank","noopener");
  window.addEventListener('pagehide',stopPreview);
  setInterval(()=>{if(!voices.length)YSSVoiceEngine.refresh()},5000);
  let refreshRunning=false;
