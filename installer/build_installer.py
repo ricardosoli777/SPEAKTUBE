@@ -64,7 +64,7 @@ def package(installer):
     files = ['manifest.json', 'popup.html', 'popup.css', 'popup.js', 'setup.html', 'setup.css', 'setup.js',
              'left-panel.js', 'speech-improvements.js', 'edge-voice-engine.js', 'diagnostics.js',
              'content.bundle.hdh2cnbfpdin.js', 'webpage.bundle.hdh2cnbfpdin.js', 'ga.bundle.hdh2cnbfpdin.js',
-             'sw.bundle.hdh2cnbfpdin.js', 'don.html', 'don.hdh2cnbfpdin.js', 'README.md',
+             'sw.bundle.hdh2cnbfpdin.js', 'don.html', 'don.hdh2cnbfpdin.js', 'README.md', 'LICENSE.txt', 'THIRD_PARTY_NOTICES.md', 'assets/banner/speaktube-banner.png',
              'assets/icon/speaktube-robot-v2-16.png', 'assets/icon/speaktube-robot-v2-32.png',
              'assets/icon/speaktube-robot-v2-48.png', 'assets/icon/speaktube-robot-v2-128.png',
              'assets/icon/speaktube-robot-v2-512.png', 'installer/SpeakTubeVoiceSetup.exe']

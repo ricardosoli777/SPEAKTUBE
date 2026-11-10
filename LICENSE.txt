@@ -1,0 +1,33 @@
+SPEAKTUBE — LICENÇA DE USO RESTRITO
+Versão 1.0 — 10 de novembro de 2026
+Copyright (c) 2026 Rica Soares, exclusivamente quanto às suas contribuições originais.
+
+1. ESCOPO
+Esta licença aplica-se somente ao código, documentação, identidade visual e demais contribuições originais do SpeakTube cujos direitos pertençam a Rica Soares. Não substitui licenças de terceiros, não revoga permissões anteriormente concedidas e não constitui licença MIT nem licença de código aberto.
+
+2. USO PERMITIDO
+É concedida autorização gratuita, pessoal, não exclusiva e intransferível para baixar os pacotes oficiais, instalar e executar a extensão e o serviço de voz em computadores sob controle do usuário, inclusive em atividades profissionais. São permitidas as cópias técnicas estritamente necessárias à instalação, execução e ao backup pessoal. Configurar as opções disponibilizadas pela interface é permitido.
+
+3. RESTRIÇÕES
+Sem autorização prévia e escrita do titular, não é permitido, sobre o material abrangido por esta licença:
+a) modificar, adaptar, traduzir o código ou criar obras derivadas;
+b) clonar ou copiar o código-fonte para criar outra extensão ou produto;
+c) redistribuir, republicar, vender, sublicenciar ou disponibilizar cópias a terceiros;
+d) remover avisos de autoria, licença ou identificação de origem;
+e) reutilizar a marca, os ícones ou o banner para apresentar outro produto como SpeakTube.
+Compartilhar o link oficial de download é permitido.
+
+4. DIREITOS DE TERCEIROS E EXCEÇÕES
+Componentes preexistentes, dependências, serviços externos e materiais de terceiros permanecem sujeitos às respectivas licenças e condições. Esta licença não atribui a Rica Soares autoria ou exclusividade sobre esses materiais e não limita direitos que suas licenças concedam. Também não restringe direitos assegurados por normas obrigatórias aplicáveis.
+
+5. REPOSITÓRIO PÚBLICO
+Enquanto o código estiver em um repositório público do GitHub, aplicam-se também as permissões de visualização e fork previstas nos termos da plataforma. Esta licença não pretende revogar essas permissões. Não há impedimento técnico à cópia de arquivos públicos.
+
+6. GARANTIA E RESPONSABILIDADE
+O software é fornecido no estado em que se encontra, sem garantias de funcionamento, disponibilidade, adequação ou continuidade de serviços externos. Na extensão permitida pela legislação aplicável, o titular não responde por danos decorrentes do uso. Direitos legais obrigatórios permanecem preservados.
+
+7. TÉRMINO E AUTORIZAÇÕES
+A violação destas condições encerra as permissões concedidas por esta licença, ressalvadas as disposições legais aplicáveis. Permissões adicionais devem ser solicitadas pelo repositório oficial:
+https://github.com/ricardosoli777/SPEAKTUBE
+
+Consulte THIRD_PARTY_NOTICES.md para os limites de titularidade e a situação de componentes preexistentes.

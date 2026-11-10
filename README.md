@@ -1,5 +1,7 @@
 # SpeakTube
 
+![SpeakTube — Dê voz às suas legendas.](assets/banner/speaktube-banner.png)
+
 Created by Rica Soares
 
 Extensão Chrome para narrar legendas do YouTube com vozes do sistema ou vozes neurais opcionais do Edge TTS. Inclui painel de ajustes, seleção de idioma/voz, controle de áudio e instalador do Serviço de Voz para Windows 64 bits.
@@ -77,3 +79,7 @@ A abertura automática da página de instalação foi removida. O Mac não faz r
 A lógica Mac foi testada em simulação e o painel foi conferido com plataforma Mac simulada; não foi testado em um Mac físico nesta sessão. A prévia de voz nativa foi reproduzida no Chrome do Windows. O instalador de voz 1.0.0 permanece o mesmo executável já validado.
 
 A primeira descoberta de legendas pode aguardar ate 30 segundos pelos dados do player, sem fazer leituras HTTP repetidas. Um player pausado com metadados e faixa de legenda disponiveis tambem e aceito. Essa espera local nao reintroduz novas tentativas depois de falha HTTP.
+
+## Licença de uso
+
+Uso da extensão permitido nos termos de [LICENSE.txt](LICENSE.txt). As contribuições originais estão sob licença própria restritiva: sem autorização, não podem ser modificadas, clonadas para outro produto ou redistribuídas. Não se trata de licença MIT. As permissões de terceiros e da plataforma GitHub permanecem preservadas; veja [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), incluindo a auditoria pendente da base preexistente.
