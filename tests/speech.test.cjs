@@ -255,3 +255,13 @@ test('initial player wait has a deadline and makes no HTTP request while unready
  const f=captionDiscoveryFixture();let now=0;f.context.Date={now:()=>now+=15000};f.player.getAppState=()=>0;
  await assert.rejects(f.run(),/player ainda nao disponibilizou/);assert.deepEqual(f.order,[]);
 });
+
+
+test('native resource timing can recover a caption request missing from the background',async()=>{
+ const f=captionDiscoveryFixture({enabled:true,captured:false});f.context.performance={getEntriesByType:()=>[{name:'https://www.youtube.com/api/timedtext?v=test&lang=en&playback=observed'}]};
+ const url=new URL(await f.run());assert.equal(url.searchParams.get('playback'),'observed');assert.equal(url.searchParams.get('tlang'),'pt');assert.equal(f.order.length,1);
+});
+
+test('resource capture rejects another video, expired URLs and unrelated resources',async()=>{
+ const f=captionDiscoveryFixture({enabled:true,captured:false});f.context.performance={getEntriesByType:()=>[{name:'https://www.youtube.com/api/timedtext?v=other&lang=en'},{name:'https://www.youtube.com/api/timedtext?v=test&expire=1'},{name:'https://example.com/api/timedtext?v=test'}]};assert.equal(await f.run(),'');
+});

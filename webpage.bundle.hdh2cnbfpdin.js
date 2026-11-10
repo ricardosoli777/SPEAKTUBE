@@ -155,8 +155,19 @@ const getUrlX = async (m,g,a) => {
    const timeout=setTimeout(()=>resolve(null),800);
    a.sendSW({timedtext:true,videoId},response=>{clearTimeout(timeout);resolve(response?.timedtext)});
   });
-  const cached=prepare(captured);
-  window.SpeakTubeDiagnostics?.update({capturedCaptionUrl:!!cached});
+  let cached=prepare(captured),captureSource=cached?'web-request':'none';
+  if(!cached){
+   const entries=globalThis.performance?.getEntriesByType?.('resource')||[];
+   for(let index=entries.length-1;index>=0;index--){
+    try{
+     const observed=new URL(entries[index].name);
+     if(observed.searchParams.get('v')!==videoId)continue;
+     const candidate=prepare(observed.href);
+     if(candidate){cached=candidate;captureSource='player-resource';break}
+    }catch{}
+   }
+  }
+  window.SpeakTubeDiagnostics?.update({capturedCaptionUrl:!!cached,captionCaptureSource:captureSource});
   if(cached)return cached;
   // Restore the original native refresh once per video, not on every retry.
   if(tracks.length&&m.captionDiscoveryVideo!==videoId&&(player?.isSubtitlesOn?.()===true||control?.getAttribute('aria-pressed')==='true')&&typeof player.toggleSubtitles==='function'){
