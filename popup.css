@@ -14,6 +14,6 @@ body { width:100%; min-width:300px; font-size:14px; } .app { max-width:460px; ma
 
 .creator-credit { padding: 8px 20px; text-align: center; font-size: 12px; color: #b7c2cf; }
 
-.setup-link{display:block;color:var(--accent);font-size:12px;padding:14px 0;text-align:center;text-decoration:underline;}
+.setup-link{display:block;margin:8px 20px 16px;padding:14px 12px;border:1px solid var(--accent);border-radius:12px;background:#142d27;color:var(--accent);font-size:12px;font-weight:700;line-height:1.5;text-align:center;text-decoration:none;}.setup-link:hover{background:#1c3c33}.setup-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
 .edge-install-cta{display:block;margin:14px 0 8px;padding:13px 15px;border:1px solid var(--accent);border-radius:12px;background:#142d27;color:var(--accent);text-decoration:none;animation:voice-cta-pulse 2.4s ease-in-out infinite}.edge-install-cta strong,.edge-install-cta span{display:block}.edge-install-cta span{font-size:12px;margin-top:3px;color:var(--text)}.edge-install-cta[hidden],.setup-link[hidden],#edge-install-note[hidden]{display:none!important}@keyframes voice-cta-pulse{0%,100%{box-shadow:0 0 0 0 #7ce6c400}50%{box-shadow:0 0 0 5px #7ce6c41a}}@media(prefers-reduced-motion:reduce){.edge-install-cta{animation:none}}
