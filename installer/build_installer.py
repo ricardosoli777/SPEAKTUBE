@@ -69,7 +69,18 @@ def package(installer):
              'assets/icon/speaktube-robot-v2-48.png', 'assets/icon/speaktube-robot-v2-128.png',
              'assets/icon/speaktube-robot-v2-512.png', 'installer/SpeakTubeVoiceSetup.exe']
     files.extend(str(p.relative_to(ROOT)) for p in (ROOT / '_locales').rglob('messages.json'))
-    extension = OUTPUT / 'SpeakTube-1.3.0-Chrome.zip'
+    version = json.loads((ROOT / 'manifest.json').read_text(encoding='utf-8'))['version']
+    extension = OUTPUT / f'SpeakTube-{version}-Chrome.zip'
+    clean = ROOT / 'chrome-extension'
+    clean.mkdir(exist_ok=True)
+    for name in files:
+        target = clean / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(ROOT / name, target)
+    allowed = {'_locales', '_metadata'}
+    invalid = [str(p.relative_to(clean)) for p in clean.rglob('*') if p.name.startswith('_') and p.name not in allowed]
+    if invalid:
+        raise ValueError('Nomes reservados no pacote Chrome: ' + ', '.join(invalid))
     with zipfile.ZipFile(extension, 'w', zipfile.ZIP_DEFLATED) as archive:
         for name in files:
             archive.write(ROOT / name, name.replace('\\', '/'))
@@ -77,7 +88,7 @@ def package(installer):
     hashes = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in (installer, extension)}
     (OUTPUT / 'SHA256SUMS.txt').write_text(''.join(f'{digest}  {name}\n' for name, digest in hashes.items()), encoding='utf-8')
     (OUTPUT / 'build-info.json').write_text(json.dumps({'extension_id': EXTENSION_ID, 'files': hashes,
-        'python': sys.version, 'service_version': '1.0.0', 'extension_version': '1.3.0',
+        'python': sys.version, 'service_version': '1.0.0', 'extension_version': version,
         'signed': False}, indent=2), encoding='utf-8')
     print(json.dumps({'installer': str(installer), 'extension': str(extension), 'hashes': hashes}, indent=2))
 

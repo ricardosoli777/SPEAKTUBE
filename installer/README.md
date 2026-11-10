@@ -28,3 +28,5 @@ Instalação: `%LOCALAPPDATA%\SpeakTube\Service`. Chaves do usuário ficam em pa
 A integração suporta Google Chrome no Windows x64. Internet é necessária para síntese; texto narrado é enviado à Microsoft. Não se instala na inicialização do Windows: o Chrome inicia o host registrado quando solicitado. Um servidor de desenvolvimento compatível já rodando em 8766 continua podendo ser usado.
 
 O pacote produzido localmente não recebe assinatura Authenticode automaticamente. Há hashes SHA256 para conferência. Licenças das dependências e do Python acompanham o payload em `licenses/`.
+
+O empacotador também gera `chrome-extension/` na raiz do projeto. Carregue essa pasta no Chrome, nunca a raiz de desenvolvimento. `--package-only` atualiza pasta/ZIP sem recompilar o executável quando ele já foi gerado. O pacote é validado contra nomes reservados, incluindo caches Python.

@@ -6,7 +6,9 @@ Extensão Chrome para narrar legendas do YouTube com vozes neurais do Edge TTS. 
 
 ## Instalar
 
-1. Baixe **SpeakTube-1.3.0-Chrome.zip** na [página de versões](https://github.com/ricardosoli777/SPEAKTUBE/releases).
+Neste projeto local, selecione **`E:\APPS\SpeakTube\chrome-extension`** ao carregar no Chrome. A raiz `E:\APPS\SpeakTube` é a pasta de desenvolvimento e contém arquivos Python/build que não devem ser carregados como extensão. O empacotador gera a pasta limpa automaticamente.
+
+1. Baixe **SpeakTube-1.3.1-Chrome.zip** na [página de versões](https://github.com/ricardosoli777/SPEAKTUBE/releases).
 2. Extraia o ZIP em uma pasta permanente.
 3. Abra `chrome://extensions`, ative **Modo do desenvolvedor**, escolha **Carregar sem compactação** e selecione a pasta extraída que contém `manifest.json`.
 4. Na página de boas-vindas, clique em **Baixar instalador para Windows**, abra o arquivo e siga o assistente.
@@ -58,7 +60,7 @@ O repositório contém o código-fonte. O instalador compilado e o pacote comple
 
 Para desenvolvimento sem o aplicativo empacotado, `python -m pip install -r requirements.txt` e `Start-EdgeTTS.ps1` iniciam o servidor local em `127.0.0.1:8766`. Esse caminho é opcional e não se aplica ao usuário do instalador.
 
-## Validação da versão 1.3.0
+## Validação da versão 1.3.x
 
 - Testes de lógica da extensão e de descoberta/cancelamento/isolamento de legendas.
 - Testes de instalação, atualização, rollback, integridade do pacote, desinstalação e protocolo nativo.

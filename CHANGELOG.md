@@ -1,3 +1,10 @@
+# 1.3.1 — Pasta limpa para o Chrome
+
+- Empacotador gera chrome-extension/ sem caches Python ou arquivos de compilação.
+- Validação rejeita nomes reservados antes de distribuir a extensão.
+- Documentação orienta carregar a pasta limpa ou extrair o ZIP da release.
+- Instalador de voz 1.0.0 preservado; nenhuma alteração na narração.
+
 # 1.3.0 — Serviço de Voz e instalação guiada
 
 - Instalador Windows x64 autossuficiente com Python e dependências incluídos.

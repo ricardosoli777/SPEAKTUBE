@@ -11,3 +11,4 @@ installer/SpeakTubeVoiceSetup.exe
 *.p12
 .env
 .env.*
+chrome-extension/
