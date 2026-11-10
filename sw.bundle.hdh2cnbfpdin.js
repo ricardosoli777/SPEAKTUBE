@@ -66,6 +66,7 @@ chrome.runtime.onMessageExternal.addListener((message, sender, respond) => {
   const id = sender.tab.id;
   (async () => {
     await ready;
+    if(message.question==='speech_platform')return await speechPlatform();
     if(['edge_voices','edge_synthesize'].includes(message.question))return await edgeRequest(message);
     if (message.timedtext !== undefined) {
       const entry = captions.get(id);
@@ -95,8 +96,9 @@ chrome.runtime.onMessageExternal.addListener((message, sender, respond) => {
 });
 chrome.runtime.onMessage.addListener((message, sender, respond) => {
   if(sender.id!==chrome.runtime.id)return false;
+  if(message.question==='speech_platform'){speechPlatform().then(respond);return true}
   if(['edge_voices','edge_synthesize'].includes(message.question)){edgeRequest(message).then(respond);return true}
-  if(message.question==='voice_service_status'||message.question==='voice_service_start'){nativeVoice(message.question==='voice_service_start'?'start':'status').then(respond);return true}
+  if(message.question==='voice_service_status'||message.question==='voice_service_start'){voiceServiceStatus(message.question==='voice_service_start').then(respond);return true}
   if(message.question==='close_panel'){if(sender.tab?.id)chrome.tabs.sendMessage(sender.tab.id,{question:'close_left_panel'}).catch(()=>{});respond({ok:true});return false}
   if(message.question!=='now_playing')return false;
   (async () => {
@@ -145,9 +147,21 @@ async function edgeRequest(message){
   try{return await perform()}catch{return {error:'O servico de voz iniciou, mas a conexao falhou. Abra Configurar voz.'}}
  }
 }
-chrome.runtime.onInstalled?.addListener(details=>{
- if(details.reason==='install')chrome.tabs.create({url:chrome.runtime.getURL('setup.html')}).catch(()=>{});
-});
+async function speechPlatform(){
+ try{return {os:(await chrome.runtime.getPlatformInfo()).os}}catch{return {os:'unknown'}}
+}
+async function voiceServiceStatus(start=false){
+ const platform=await speechPlatform();
+ if(platform.os==='mac'||platform.os==='linux')return {ok:true,os:platform.os,nativeVoices:true,requiresInstaller:false};
+ if(start)return nativeVoice('start');
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),1500);
+ try{
+  const response=await fetch(EDGE_URL+'/health',{signal:controller.signal});const data=await response.json();
+  if(response.ok&&data.engine==='edge-tts'&&data.extension_id===chrome.runtime.id)return {ok:true,installed:true,running:true,os:platform.os,requiresInstaller:false,health:data};
+ }catch{}finally{clearTimeout(timer)}
+ return {...await nativeVoice('status'),os:platform.os};
+}
+// Installation never opens an onboarding tab. Setup is an explicit popup action.
 chrome.action.onClicked.addListener(async tab=>{
  if(!Number.isInteger(tab.id)||!isYouTube(tab.url))return;
  try{

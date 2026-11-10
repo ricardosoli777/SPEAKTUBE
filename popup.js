@@ -45,11 +45,17 @@
   });render();
  }
  function render(){
+  const native=YSSVoiceEngine.backend==='native',windows=YSSVoiceEngine.platform==='win';
+  $('edge-install-cta').hidden=!windows||!native;$('edge-install-note').hidden=!windows||!native;$('voice-setup-link').hidden=!windows;
+  if(!pt){$('edge-install-cta').querySelector('strong').textContent='Want clearer audio?';$('edge-install-cta').querySelector('span').textContent='Install Edge TTS · click here';$('edge-install-note').textContent='Optional on Windows. Download and run the installer, then reopen SpeakTube.'}
   $('enabled').checked=!!options.enable;ensureLanguage(options.translate_lang);$('language').value=options.translate_lang;$('portuguese-variant').hidden=!options.translate_lang.toLowerCase().startsWith('pt');$('voice-locale').value=extra.voice_locale;
   const voice=YSSSpeechImprovements.selectVoice(voices,options.speech_voice,YSSSpeechImprovements.voiceLanguage(options.translate_lang,extra.voice_locale),extra.auto_voice);
   if(voice)$('voice').value=String(voices.indexOf(voice));
   $('automatic').checked=extra.auto_voice;$('voice').disabled=!voices.length||extra.auto_voice;$('preview').disabled=!voice;
-  $('voice-hint').textContent=!voices.length?(YSSVoiceEngine.lastError?(invalidContext(YSSVoiceEngine.lastError)?reloadHint():(pt?'Servico de voz indisponivel. Abra Configurar / instalar servico de voz.':'Voice service unavailable. Open voice setup.')):copy.noVoices):!voice?copy.variantUnavailable:extra.auto_voice?copy.autoHint:copy.manual;
+  const missingVoice=native?(pt?'Não há voz do sistema para esta variante. Confira as vozes instaladas no sistema.':'No system voice matches this variant. Check the voices installed on your system.'):copy.variantUnavailable;
+  const source=native?(YSSVoiceEngine.platform==='mac'?(pt?'Vozes do macOS · sem instalar Edge TTS.':'macOS voices · no Edge TTS installation needed.'):(pt?'Vozes do sistema. Edge TTS é opcional para vozes neurais.':'System voices. Edge TTS is optional for neural voices.')):(pt?'Vozes neurais do Edge TTS.':'Edge TTS neural voices.');
+  $('voice-hint').textContent=!voices.length?(invalidContext(YSSVoiceEngine.lastError)?reloadHint():(YSSVoiceEngine.lastError||copy.noVoices)):!voice?missingVoice:source;
+
   $('speech-volume').value=Math.round(options.volume*100);$('speech-volume-value').textContent=Math.round(options.volume*100)+'%';
   $('original-volume').value=Math.round(extra.original_volume*100);$('original-volume-value').textContent=Math.round(extra.original_volume*100)+'%';
   $('duck').checked=extra.duck_audio;$('original-volume').disabled=!extra.duck_audio;$('original-control').classList.toggle('disabled',!extra.duck_audio);
@@ -107,7 +113,7 @@
   if(refreshRunning)return;refreshRunning=true;
   try{
    const response=await chrome.runtime.sendMessage({question:'now_playing'});
-   const statuses=pt?{Idle:'Aguardando vídeo',Loading:'Buscando legendas…','No CC':'Sem legendas disponíveis',Voice:'Verifique o Edge TTS e a voz selecionada',CCLimit:'YouTube limitou o acesso às legendas. Nenhuma nova tentativa será feita automaticamente.',Error:'Falha ao carregar legendas',Ready:'Pronto para narrar',Speak:'Narrando agora',End:'Legendas concluídas',Off:'Narração desligada',On:'Narração ativada','❚❚':'Vídeo pausado'}:{Idle:'Waiting for a video',Loading:'Loading captions…','No CC':'No captions available',Voice:'Check Edge TTS and selected voice',CCLimit:'YouTube caption request limit reached. Automatic retry is disabled.',Error:'Could not load captions',Ready:'Ready to narrate',Speak:'Narrating now',End:'Captions complete',Off:'Narration off',On:'Narration enabled','❚❚':'Video paused'};
+   const statuses=pt?{Idle:'Aguardando vídeo',Loading:'Buscando legendas…','No CC':'Sem legendas disponíveis',Voice:'Verifique a voz selecionada e permita a reprodução no vídeo',CCLimit:'YouTube limitou o acesso às legendas. Nenhuma nova tentativa será feita automaticamente.',Error:'Falha ao carregar legendas',Ready:'Pronto para narrar',Speak:'Narrando agora',End:'Legendas concluídas',Off:'Narração desligada',On:'Narração ativada','❚❚':'Vídeo pausado'}:{Idle:'Waiting for a video',Loading:'Loading captions…','No CC':'No captions available',Voice:'Check the selected voice and allow playback in the video',CCLimit:'YouTube caption request limit reached. Automatic retry is disabled.',Error:'Could not load captions',Ready:'Ready to narrate',Speak:'Narrating now',End:'Captions complete',Off:'Narration off',On:'Narration enabled','❚❚':'Video paused'};
    $('video-title').textContent=response?.msg||copy.openVideo;$('video-title').title=response?.msg||'';
    const state=response?.status||'Idle';$('playback-status').textContent=statuses[state]||state;
    $('status-dot').classList.toggle('active',state==='Speak'||state==='Ready');$('status-dot').classList.toggle('error',state==='Error');

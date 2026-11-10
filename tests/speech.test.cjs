@@ -55,7 +55,7 @@ test('actual player rewinds safely after completion and missing voices do not cr
 });
 function backgroundFixture(migrated=true){
  const handlers={},store=migrated?{speechImprovements:{natural_sync_v1:true}}:{},tabs=new Map([[1,{url:'https://www.youtube.com/watch?v=a'}],[2,{url:'https://www.youtube.com/watch?v=b'}]]);
- const chrome={i18n:{getUILanguage:()=> 'pt-BR'},storage:{sync:{async get(keys){return Object.fromEntries((Array.isArray(keys)?keys:[keys]).map(key=>[key,store[key]]))},async set(data){Object.assign(store,data)}},onChanged:{addListener(fn){handlers.changed=fn}}},webRequest:{onBeforeRequest:{addListener(fn){handlers.request=fn}}},tabs:{async create(details){handlers.createdTab=details;return details},async get(id){return tabs.get(id)},async query(){return [{id:1}]},onRemoved:{addListener(fn){handlers.removed=fn}}},action:{onClicked:{addListener(fn){handlers.clicked=fn}},async setBadgeText(){},async setBadgeBackgroundColor(){}},sidePanel:{async setPanelBehavior(value){handlers.behavior=value}},runtime:{id:'test',getURL:path=>'chrome-extension://test/'+path,onInstalled:{addListener(fn){handlers.installed=fn}},onMessageExternal:{addListener(fn){handlers.external=fn}},onMessage:{addListener(fn){handlers.internal=fn}}}};
+ const chrome={i18n:{getUILanguage:()=> 'pt-BR'},storage:{sync:{async get(keys){return Object.fromEntries((Array.isArray(keys)?keys:[keys]).map(key=>[key,store[key]]))},async set(data){Object.assign(store,data)}},onChanged:{addListener(fn){handlers.changed=fn}}},webRequest:{onBeforeRequest:{addListener(fn){handlers.request=fn}}},tabs:{async create(details){handlers.createdTab=details;return details},async get(id){return tabs.get(id)},async query(){return [{id:1}]},onRemoved:{addListener(fn){handlers.removed=fn}}},action:{onClicked:{addListener(fn){handlers.clicked=fn}},async setBadgeText(){},async setBadgeBackgroundColor(){}},sidePanel:{async setPanelBehavior(value){handlers.behavior=value}},runtime:{id:'test',async getPlatformInfo(){return {os:'win'}},getURL:path=>'chrome-extension://test/'+path,onInstalled:{addListener(fn){handlers.installed=fn}},onMessageExternal:{addListener(fn){handlers.external=fn}},onMessage:{addListener(fn){handlers.internal=fn}}}};
  const context={chrome,URL,Date,Map,Number,Object,Promise};vm.createContext(context);vm.runInContext(fs.readFileSync(require.resolve('../sw.bundle.hdh2cnbfpdin.js'),'utf8'),context);
  async function message(data,id=1){return await new Promise(resolve=>handlers.external(data,{url:tabs.get(id).url,tab:{id}},resolve))}
  return {handlers,store,tabs,message,chrome,context};
@@ -83,7 +83,7 @@ test('toolbar recovers panel in an already open tab and preserves toggling',asyn
 test('panel reinjection is idempotent and close works independently of extension messaging',()=>{
  const listeners=[],children=[],windowListeners={};let shadow,observedFrame,observeFrame,disconnected=false;
  const document={createElement(){return {style:{},isConnected:false,contentWindow:{},setAttribute(){},hasAttribute(name){return Object.hasOwn(this,name)},removeAttribute(name){delete this[name]},addEventListener(type,fn){this[type]=fn},attachShadow(){shadow={append(...items){this.items=items}};return shadow},remove(){this.isConnected=false;const index=children.indexOf(this);if(index>=0)children.splice(index,1)}}},getElementById(id){return children.find(x=>x.id===id)},documentElement:{append(host){host.isConnected=true;children.push(host)}},addEventListener(){},removeEventListener(){}};
- const context={URL,document,MutationObserver:class{constructor(fn){observeFrame=fn}observe(frame){observedFrame=frame}disconnect(){disconnected=true}},window:{addEventListener(type,fn){windowListeners[type]=fn},removeEventListener(type){delete windowListeners[type]}},chrome:{runtime:{id:'test',getURL:path=>'chrome-extension://test/'+path.replace(/^\//,''),onMessage:{addListener(fn){listeners.push(fn)},removeListener(fn){listeners.splice(listeners.indexOf(fn),1)}}}}};vm.createContext(context);
+ const context={URL,document,MutationObserver:class{constructor(fn){observeFrame=fn}observe(frame){observedFrame=frame}disconnect(){disconnected=true}},window:{addEventListener(type,fn){windowListeners[type]=fn},removeEventListener(type){delete windowListeners[type]}},chrome:{runtime:{id:'test',async getPlatformInfo(){return {os:'win'}},getURL:path=>'chrome-extension://test/'+path.replace(/^\//,''),onMessage:{addListener(fn){listeners.push(fn)},removeListener(fn){listeners.splice(listeners.indexOf(fn),1)}}}}};vm.createContext(context);
  const source=fs.readFileSync(require.resolve('../left-panel.js'),'utf8');vm.runInContext(source,context);vm.runInContext(source,context);assert.equal(listeners.length,1);
  let response;const toggle=()=>listeners[0]({question:'toggle_left_panel'},{id:'test'},value=>response=value);
  toggle();assert.equal(response.open,true);assert.match(children[0].style.cssText,/right:0!important/);assert.match(shadow.items[0].src,/ui=robot-/);
@@ -218,10 +218,25 @@ test('missing native companion returns an installation explanation without retry
  const result=await f.message({question:'edge_voices'});assert.match(result.error,/Configurar voz/);assert.equal(starts,1);assert.equal(calls,1);
 });
 
-test('first installation opens onboarding and updates do not open extra tabs',async()=>{
- const f=backgroundFixture();f.handlers.installed({reason:'update'});assert.equal(f.handlers.createdTab,undefined);f.handlers.installed({reason:'install'});assert.equal(f.handlers.createdTab.url,'chrome-extension://test/setup.html');
+test('installation and updates never register an automatic onboarding tab',()=>{
+ const f=backgroundFixture();assert.equal(f.handlers.installed,undefined);assert.equal(f.handlers.createdTab,undefined);
 });
 
 test('untrusted senders cannot invoke native companion controls',()=>{
  const f=backgroundFixture();let called=false;const result=f.handlers.internal({question:'voice_service_start'},{id:'other'},()=>called=true);assert.equal(result,false);assert.equal(called,false);
+});
+
+
+test('platform discovery returns the actual Chrome platform to the page',async()=>{
+ const f=backgroundFixture();f.chrome.runtime.getPlatformInfo=async()=>({os:'mac'});const result=await f.message({question:'speech_platform'});assert.equal(result.os,'mac');
+});
+
+test('Mac voice setup does not try to contact the Windows native host',async()=>{
+ const f=backgroundFixture();f.chrome.runtime.getPlatformInfo=async()=>({os:'mac'});let nativeCalls=0;f.chrome.runtime.sendNativeMessage=()=>nativeCalls++;
+ const result=await new Promise(resolve=>f.handlers.internal({question:'voice_service_status'},{id:'test'},resolve));assert.equal(result.nativeVoices,true);assert.equal(result.requiresInstaller,false);assert.equal(nativeCalls,0);
+});
+
+test('manual compatible Edge server is recognized without requiring a new installer',async()=>{
+ const f=backgroundFixture();addNetworkFixture(f,async()=>({ok:true,json:async()=>({engine:'edge-tts',extension_id:'test'})}));let nativeCalls=0;f.chrome.runtime.sendNativeMessage=()=>nativeCalls++;
+ const result=await new Promise(resolve=>f.handlers.internal({question:'voice_service_status'},{id:'test'},resolve));assert.equal(result.running,true);assert.equal(result.requiresInstaller,false);assert.equal(nativeCalls,0);
 });

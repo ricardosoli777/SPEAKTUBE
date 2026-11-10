@@ -32,3 +32,8 @@ test('voice onboarding has external scripts and the native messaging permission'
  for(const file of ['setup.js','setup.css','installer/voice_service.py','installer/install_core.py','installer/setup_app.py','installer/build_installer.py'])assert.ok(fs.existsSync(path.join(root,file)),file);
  new vm.Script(fs.readFileSync(path.join(root,'setup.js'),'utf8'));
 });
+
+
+test('optional Edge installer CTA is available inside the popup with reduced-motion support',()=>{
+ const html=fs.readFileSync(path.join(root,'popup.html'),'utf8'),css=fs.readFileSync(path.join(root,'popup.css'),'utf8');assert.match(html,/id="edge-install-cta"/);assert.match(html,/download="SpeakTubeVoiceSetup.exe"/);assert.match(css,/prefers-reduced-motion/);
+});

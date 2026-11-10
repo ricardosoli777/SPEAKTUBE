@@ -1,3 +1,13 @@
+# 1.4.0 — Vozes do Mac e instalação opcional no painel
+
+- Detecção da plataforma pela API do Chrome.
+- Mac usa vozes do sistema sem Edge TTS ou instalador.
+- Windows usa o Edge TTS quando disponível e vozes do sistema como alternativa.
+- CTA pulsante dentro do painel: Quer um áudio mais nítido? Instale o Edge TTS.
+- Removida abertura automática da página de instalação.
+- Servidor Edge configurado manualmente pode ser reconhecido como disponível.
+- Mantidos cancelamento, variante de idioma e ausência de retentativas agendadas de legendas.
+
 # 1.3.1 — Pasta limpa para o Chrome
 
 - Empacotador gera chrome-extension/ sem caches Python ou arquivos de compilação.
