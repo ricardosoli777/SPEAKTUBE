@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SpeakTube</title><link rel="icon" type="image/png" sizes="32x32" href="../assets/icon/speaktube-robot-v2-32.png"><link rel="stylesheet" href="../popup.css">
-<script src="preview-env.js"></script><script defer src="../speech-improvements.js"></script><script defer src="../edge-voice-engine.js"></script><script defer src="../popup.js"></script></head>
+<script src="preview-env.js"></script><script defer src="../speech-improvements.js"></script><script defer src="../edge-voice-engine.js"></script><script defer src="../popup.js"></script><script defer src="../popup-waveform.js"></script></head>
 <body><div class="app">
 <header class="topbar"><img class="brand-mark" src="../assets/icon/speaktube-robot-v2-48.png" alt="SpeakTube robot"><div class="brand"><strong>SpeakTube</strong><small data-i18n="tagline">Dê voz às suas legendas.</small></div>
 <button type="button" id="close-panel" class="close-panel" aria-label="Fechar painel">×</button><label class="switch"><input type="checkbox" id="enabled" aria-label="Ativar narração"><span></span></label></header>
 <main>
-<section class="now-playing" aria-labelledby="video-label"><div class="eyebrow" id="video-label" data-i18n="nowPlaying">AGORA NO YOUTUBE</div><p id="video-title" data-i18n="openVideo">Abra um vídeo para começar</p><div class="status-line"><span class="status-dot" id="status-dot"></span><span id="playback-status" role="status">Aguardando vídeo</span><span class="version">v1.4</span></div></section>
+<section class="now-playing" aria-labelledby="video-label"><div class="eyebrow" id="video-label" data-i18n="nowPlaying">AGORA NO YOUTUBE</div><p id="video-title" data-i18n="openVideo">Abra um vídeo para começar</p><div class="status-line"><span class="status-dot" id="status-dot"></span><span id="playback-status" role="status">Aguardando vídeo</span><span class="version">v1.4</span></div><div class="waveform" aria-hidden="true"><canvas id="waveform"></canvas></div></section>
 <section class="section" aria-labelledby="voice-heading"><div class="section-heading"><h1 id="voice-heading" data-i18n="voiceTitle">Sua voz, do seu jeito</h1><span class="section-number">01</span></div>
 <label class="field-label" for="language" data-i18n="language">Idioma das legendas</label><select id="language"></select>
 <div id="portuguese-variant"><label class="field-label" for="voice-locale" data-i18n="variant">Variante da voz em português</label><select id="voice-locale"><option value="pt-BR">Português (Brasil)</option><option value="pt-PT">Português (Portugal)</option></select></div><div class="voice-label"><label class="field-label" for="voice" data-i18n="voice">Voz da narração</label><label class="auto-choice"><input type="checkbox" id="automatic"><span data-i18n="automatic">Automática</span></label></div>

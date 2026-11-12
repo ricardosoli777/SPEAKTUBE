@@ -1,6 +1,6 @@
 /* SpeakTube panel host: independent close control and versioned frame. */
 (()=>{
- const key='__speakTubePanelController',revision='robot-20261110-v4';
+ const key='__speakTubePanelController',revision='robot-20261112-v1';
  if(globalThis[key]?.revision===revision)return;
  globalThis[key]?.dispose();
  document.getElementById('speaktube-panel-host')?.remove();
@@ -8,8 +8,14 @@
  function close(){frameObserver?.disconnect();frameObserver=null;host?.remove();host=null;frame=null;document.removeEventListener('keydown',escape)}
  function escape(event){if(event.key==='Escape')close()}
  function receive(event){
+  relay(event);
   if(!frame||event.source!==frame.contentWindow||event.origin!==new URL(chrome.runtime.getURL('/')).origin)return;
   if(event.data?.type==='speaktube-close-panel')close();
+ }
+ function relay(event){
+  if(event.source!==window||event.data?.type!=='speaktube-activity'||!frame?.contentWindow)return;
+  const {speaking,samples}=event.data;
+  frame.contentWindow.postMessage({type:'speaktube-activity',speaking:!!speaking,samples:Array.isArray(samples)?samples.slice(0,256):null},new URL(chrome.runtime.getURL('/')).origin);
  }
  function open(){
   if(host?.isConnected){close();return}

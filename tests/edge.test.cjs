@@ -29,3 +29,9 @@ test('audio playback failures expose the media error and clear playback state',a
  let audio,error;const engine=createEdgeSpeech(async()=>({audio:Buffer.from('ID3audio').toString('base64')}),()=>audio=new AudioFixture());const value=item();value.onerror=e=>error=e;
  await engine.speak(value);audio.error={code:4};audio.onerror();assert.equal(error.error,'audio-playback');assert.match(error.message,/4/);assert.equal(engine.speaking,false);assert.equal(engine.pending,false);
 });
+
+test('voice activity events fire when narration starts and ends without Web Audio',async()=>{
+ const {activity}=require('../edge-voice-engine.js'),seen=[];activity.addEventListener('activity',e=>seen.push(e.speaking));
+ let audio;const engine=createEdgeSpeech(async()=>({audio:Buffer.from('ID3audio').toString('base64')}),()=>audio=new AudioFixture());
+ await engine.speak(item());audio.onended();assert.deepEqual(seen.slice(-2),[true,false]);
+});

@@ -1,5 +1,23 @@
 /* Edge TTS playback engine shared by the page and extension panel. */
 (function(root){
+ const activity=new EventTarget();
+ function emitActivity(speaking,samples=null){const event=new Event('activity');event.speaking=speaking;event.samples=samples;activity.dispatchEvent(event)}
+ let meterContext=null;
+ /* Taps the narration through captureStream so playback never depends on the AudioContext state. */
+ function attachMeter(audio){
+  try{
+   const Context=root.AudioContext||root.webkitAudioContext;
+   if(!Context||typeof audio.captureStream!=='function')return null;
+   meterContext=meterContext||new Context();
+   if(meterContext.state==='suspended')meterContext.resume().catch(()=>{});
+   const stream=audio.captureStream();if(!stream.getAudioTracks().length)return null;
+   const source=meterContext.createMediaStreamSource(stream),analyser=meterContext.createAnalyser();
+   analyser.fftSize=128;analyser.smoothingTimeConstant=.6;source.connect(analyser);
+   const data=new Uint8Array(analyser.fftSize);
+   const timer=setInterval(()=>{analyser.getByteTimeDomainData(data);emitActivity(true,data.slice())},33);
+   return()=>{clearInterval(timer);try{source.disconnect()}catch{}};
+  }catch{return null}
+ }
  function contextInvalid(error){return /extension context invalidated/i.test(error?.message||String(error||''))}
  function createEdgeSpeech(request, makeAudio = url => new Audio(url)) {
   let voices=[],active=null,generation=0,loading=null,lastRefresh=0;
@@ -32,13 +50,13 @@
      const url=URL.createObjectURL(new Blob([bytes],{type:'audio/mpeg'}));
      const audio=makeAudio(url);active={audio,url,token};audio.volume=Math.max(0,Math.min(1,Number(item.volume)||0));audio.playbackRate=Math.max(.1,Math.min(2,Number(item.rate)||1));audio.preservesPitch=true;
      let started=false;
-     audio.onplaying=()=>{if(token!==generation||started)return;started=true;engine.pending=false;engine.speaking=true;item.onstart?.({duration:Number.isFinite(audio.duration)?audio.duration*1000/audio.playbackRate:null})};
+     audio.onplaying=()=>{if(token!==generation||started)return;started=true;engine.pending=false;engine.speaking=true;active.stopMeter=attachMeter(audio);if(!active.stopMeter)emitActivity(true);item.onstart?.({duration:Number.isFinite(audio.duration)?audio.duration*1000/audio.playbackRate:null})};
      audio.onended=()=>{if(token!==generation)return;engine.cancel();item.onend?.({})};
      audio.onerror=()=>{if(token!==generation)return;const code=audio.error?.code;engine.lastError='Falha ao reproduzir audio do Edge TTS'+(code?' (codigo '+code+')':'')+'.';root.SpeakTubeDiagnostics?.record('audio-error',{code});engine.cancel();item.onerror?.({error:'audio-playback',message:engine.lastError})};
      await audio.play();
     }catch(error){if(token===generation){engine.lastError=error.message;engine.cancel();item.onerror?.({error:contextInvalid(error)?'extension-reloaded':'edge-unavailable',message:error.message})}}
    },
-   cancel(){generation++;if(active){active.audio.onplaying=active.audio.onended=active.audio.onerror=null;active.audio.pause();active.audio.removeAttribute('src');URL.revokeObjectURL(active.url);active=null}engine.pending=false;engine.speaking=false;engine.paused=false},
+   cancel(){generation++;if(active){active.stopMeter?.();emitActivity(false);active.audio.onplaying=active.audio.onended=active.audio.onerror=null;active.audio.pause();active.audio.removeAttribute('src');URL.revokeObjectURL(active.url);active=null}engine.pending=false;engine.speaking=false;engine.paused=false},
    pause(){active?.audio.pause();engine.paused=true},
    resume(){if(active)active.audio.play().catch(()=>{});engine.paused=false}
   };
@@ -64,14 +82,14 @@
      utterance.lang=voice?.lang||item.lang||'';utterance.rate=Math.max(.1,Math.min(2,Number(item.rate)||1));
      utterance.pitch=Math.max(0,Math.min(2,Number(item.pitch)||1));utterance.volume=Math.max(0,Math.min(1,Number(item.volume)||0));
      engine.pending=true;
-     const finish=()=>{active=null;engine.pending=false;engine.speaking=false;engine.paused=false};
-     utterance.onstart=()=>{if(token!==generation)return;engine.pending=false;engine.speaking=true;item.onstart?.({duration:null})};
+     const finish=()=>{active=null;engine.pending=false;engine.speaking=false;engine.paused=false;emitActivity(false)};
+     utterance.onstart=()=>{if(token!==generation)return;engine.pending=false;engine.speaking=true;emitActivity(true);item.onstart?.({duration:null})};
      utterance.onend=e=>{if(token!==generation)return;finish();item.onend?.({elapsedTime:e.elapsedTime})};
      utterance.onerror=e=>{if(token!==generation)return;finish();engine.lastError=e.error==='not-allowed'?'Clique no video ou na previa para permitir a voz.':('Falha na voz do sistema: '+e.error);item.onerror?.({error:e.error,message:engine.lastError})};
      synthesis.speak(utterance);
     }catch(error){engine.cancel();engine.lastError=error.message;item.onerror?.({error:'native-unavailable',message:error.message})}
    },
-   cancel(){generation++;if(active)active.onstart=active.onend=active.onerror=null;if(active||engine.pending||engine.speaking)synthesis?.cancel();active=null;engine.pending=false;engine.speaking=false;engine.paused=false},
+   cancel(){generation++;if(active)active.onstart=active.onend=active.onerror=null;if(active||engine.pending||engine.speaking){synthesis?.cancel();emitActivity(false)}active=null;engine.pending=false;engine.speaking=false;engine.paused=false},
    pause(){synthesis?.pause();engine.paused=true},resume(){synthesis?.resume();engine.paused=false}
   };
   synthesis?.addEventListener?.('voiceschanged',()=>engine.refresh());
@@ -115,8 +133,9 @@
   engine.ready=engine.refresh();return engine;
  }
  class EdgeUtterance{constructor(text){this.text=text;this.rate=1;this.pitch=1;this.volume=1;this.voice=null}}
- if(typeof module!=='undefined'&&module.exports){module.exports={createEdgeSpeech,createNativeSpeech,createPlatformSpeech,platformName,EdgeUtterance,contextInvalid};return}
- root.YSSUtterance=EdgeUtterance;
+ if(typeof module!=='undefined'&&module.exports){module.exports={activity,createEdgeSpeech,createNativeSpeech,createPlatformSpeech,platformName,EdgeUtterance,contextInvalid};return}
+ root.YSSUtterance=EdgeUtterance;root.YSSVoiceActivity=activity;
+ if(location.protocol!=='chrome-extension:')activity.addEventListener('activity',event=>{try{root.postMessage({type:'speaktube-activity',speaking:event.speaking,samples:event.samples?Array.from(event.samples):null},location.origin)}catch{}});
  const extensionId='dlnpomclnceomfiplgjkfendkdncfdkf';
  const request=message=>new Promise((resolve,reject)=>{
   const timer=setTimeout(()=>reject(Error('Edge TTS timeout')),40000);

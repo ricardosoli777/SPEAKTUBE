@@ -80,6 +80,7 @@
         "popup.html",
         "popup.css",
         "popup.js",
+        "popup-waveform.js",
         "speech-improvements.js",
         "edge-voice-engine.js",
         "assets/icon/speaktube-robot-v2-16.png",
